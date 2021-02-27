@@ -231,8 +231,8 @@ var prayingTowns =
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-71.462759,
-						42.511979
+						-71.62329,
+						42.077682
 					]
 				},
 				"properties":{
