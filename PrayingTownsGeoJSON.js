@@ -69,7 +69,35 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Deer Island",
-					"popupContent": "In October 1675 Praying Indians are forced to relocated to Deer Island"
+					"popupContent": "Praying Indians ordered to relocate to Deer Isalnd [EXPAND]"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-70.965238,
+						42.321402
+					]
+				},
+				"properties":{
+					"name": "Long Island",
+					"popupContent": "[EXPAND]"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-70.896081,
+						42.332784
+					]
+				},
+				"properties":{
+					"name": "Great Brewster Island",
+					"popupContent": "[EXPAND]"
 				}
 			},
 			{
