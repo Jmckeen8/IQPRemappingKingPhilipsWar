@@ -77,27 +77,13 @@ var colonistTowns =
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-71.673056,
-						42.455278
-					]
-				},
-				"properties":{
-					"name": "Town of Lancaster",
-					"popupContent": "February 10, 1675 - raid on Lancaster"
-				}
-			},
-			{
-				"type": "Feature",
-				"geometry": {
-					"type": "Point",
-					"coordinates": [
 						-71.306111,
 						42.186944
 					]
 				},
 				"properties":{
 					"name": "Town of Medfield",
-					"popupContent": "February 21, 1675 - attack on Medfield"
+					"popupContent": "February 21, 1676 - attack on Medfield"
 				}
 			},
 			{
@@ -224,6 +210,58 @@ var colonistTowns =
 				"properties":{
 					"name": "Rowlandson Rock",
 					"popupContent": "Rock Mary Rowlandson and other captives passed by on their first night in captivity - historical marker - February 10-11, 1676"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-71.67542,
+						42.44988
+					]
+				},
+				"properties":{
+					"name": "Rowlandson Residence",
+					"popupContent": "Located right at the center of town, Mary Rowlandson was taken captive during the raid on Lancaster on February 10, 1676. It is speculated that the Rowlandson house may have been specifically targeted because John Rowlandson was the town minister and held high status. "
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-71.552322,
+						42.34724
+					]
+				},
+				"properties":{
+					"name": "Marlborough Meeting House",
+					"popupContent": "In 1663, Marlborough proceeded to build their meeting house in the Praying Indians' planting field, technically outside the boundaries of the colonial town.",
+					
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Polygon",
+					"coordinates": [
+						[
+							[-71.653879, 42.474963],
+							[-71.656389, 42.461131],
+							[-71.660743, 42.453210],
+							[-71.672035, 42.444600],
+							[-71.685823, 42.434084],
+							[-71.692333, 42.433220],
+							[-71.705457, 42.441369],
+							[-71.691846, 42.467291],
+							[-71.682683, 42.472748]
+						]
+					]
+				},
+				"properties":{
+					"name": "Town of Lancaster",
+					"popupContent": "The Town of Lancaster began in the Nashaway area coexisting with the Indian village of Waushacum, with the original land granted to a group of undertakers.  However, the settler colonists expanded their territory through Nashaway Indians' repayment of debts, and had considerable land holdings in the area by the time of King Philip's War. The town of Lancaster was raided on February 10, 1676 by Nipmuc Indians"
 				}
 			}
 		]	

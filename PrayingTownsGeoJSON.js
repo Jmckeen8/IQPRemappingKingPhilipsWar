@@ -13,7 +13,8 @@ var prayingTowns =
 				},
 				"properties": {
 					"name": "The John Eliot Oak, Natick",
-					"popupContent": "John Eliot establishes a location to preach to and answer questions from the Praying Indians"
+					"popupContent": "John Eliot establishes a location to preach to and answer questions from the Praying Indians",
+					"type": "old"
 				}
 			},
 			{
@@ -27,7 +28,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Namasket",
-					"popupContent": "Christian Indian town where John Sassamon served as minister"
+					"popupContent": "Christian Indian town where John Sassamon served as minister",
+					"type": "old"
 				}
 			},
 			{
@@ -41,7 +43,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Natick Meetinghosue",
-					"popupContent": "Meetinghouse constructed by Christian Indians with support from John Eliot"
+					"popupContent": "Meetinghouse constructed by Christian Indians with support from John Eliot",
+					"type": "old"
 				}
 			},
 			{
@@ -55,7 +58,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Hassanemesit",
-					"popupContent": "James Printer's hometown, attacked by Nipmucs in early November, 1675"
+					"popupContent": "James Printer's hometown, attacked by Nipmucs in early November, 1675",
+					"type": "old"
 				}
 			},
 			{
@@ -69,7 +73,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Deer Island",
-					"popupContent": "Praying Indians ordered to relocate to Deer Isalnd [EXPAND]"
+					"popupContent": "October 13, 1675 - As tensions between the settler colonists and Indigenous tribes continued to rise, the Massachusetts Council ordered all Christian Indians be relocated to Deer Island. Conditions on the island were poor, with little food and shelter, and many of the Christian Indians died before the group was finally released in late May of 1676",
+					"type": "internment"
 				}
 			},
 			{
@@ -83,7 +88,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Long Island",
-					"popupContent": "[EXPAND]"
+					"popupContent": "Praying Indians were held on Long Island in addition to Deer Island during the winter of 1675 to 1676.",
+					"type": "internment"
 				}
 			},
 			{
@@ -97,23 +103,11 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Great Brewster Island",
-					"popupContent": "[EXPAND]"
+					"popupContent": "A group of nine Praying Indian women and six children were held on Great Brewseter Island instead of the other Boston Harbor islands that were used for internment duirng King Philip's War. The Massachusetts State Archives state that these women were not willing to join their husbands in internment. ",
+					"type": "internment"
 				}
 			},
-			{
-				"type": "Feature",
-				"geometry": {
-					"type": "Point",
-					"coordinates": [
-						-71.552322,
-						42.34724
-					]
-				},
-				"properties":{
-					"name": "Marlborough Meeting House",
-					"popupContent": "In 1663, Marlborough proceeded to build their meeting house in the Praying Indians' planting field, technically outside the boundaries of the colonial town."
-				}
-			},
+			
 			{
 				"type": "Feature",
 				"geometry": {
@@ -125,7 +119,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Wamesit Village",
-					"popupContent": "Described as along the river banks where the Concord River meets the Merrimack "
+					"popupContent": "Described as along the river banks where the Concord River meets the Merrimack ",
+					"type": "old"
 				}
 			},
 			{
@@ -139,7 +134,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Wamesit Meetinghouse Hill",
-					"popupContent": "Location of John Eliot's Meetinghouse to preach to the Wamesits"
+					"popupContent": "Location of John Eliot's Meetinghouse to preach to the Wamesits",
+					"type": "old"
 				}
 			},
 			{
@@ -153,7 +149,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Fort Meadow, Okkokonimesit",
-					"popupContent": "Used as a fishing outpost along the falls of Fort Meadow Brook. Used in winter to bury and secure the summer harvest"
+					"popupContent": "Used as a fishing outpost along the falls of Fort Meadow Brook. Used in winter to bury and secure the summer harvest",
+					"type": "old"
 				}
 			},
 			{
@@ -167,7 +164,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Punkapog",
-					"popupContent": "Location of historical marker placed on the northern line of the area"
+					"popupContent": "Location of historical marker placed on the northern line of the area",
+					"type": "old"
 				}
 			},
 			{
@@ -181,7 +179,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Makunkokoag",
-					"popupContent": "Marker placed on area known as Magunco Hill"
+					"popupContent": "Marker placed on area known as Magunco Hill",
+					"type": "old"
 				}
 			},
 			{
@@ -195,7 +194,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Sarah Doublet Forest, Nashoba",
-					"popupContent": "After the inhabitants of Nashoba were forced to Deer Island during the war, much of the village was parceled off for the colonists. The small part that remained for those who returned remains as the Sarah Doublet Forest"
+					"popupContent": "After the inhabitants of Nashoba were forced to Deer Island during the war, much of the village was parceled off for the colonists. The small part that remained for those who returned remains as the Sarah Doublet Forest",
+					"type": "old"
 				}
 			},
 			{
@@ -209,7 +209,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Nashoba Indian Fort",
-					"popupContent": "Originally constructed to defend against Mohawk attacks, the exact location of the fort has been lost to history, but this point is one of the educated guesses that exist"
+					"popupContent": "Originally constructed to defend against Mohawk attacks, the exact location of the fort has been lost to history, but this point is one of the educated guesses that exist",
+					"type": "old"
 				}
 			},
 			{
@@ -223,7 +224,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Manchaug, village",
-					"popupContent": "Gookin identified the location of the village on what is now Whittier's Hill"
+					"popupContent": "Gookin identified the location of the village on what is now Whittier's Hill",
+					"type": "new"
 				}
 			},
 			{
@@ -237,7 +239,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Manchaug Pond",
-					"popupContent": "Evidence of Indian activity exists on north shore of Pond, closest to the village"
+					"popupContent": "Evidence of Indian activity exists on north shore of Pond, closest to the village",
+					"type": "new"
 				}
 			},
 			{
@@ -251,7 +254,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Chabunakonkomug",
-					"popupContent": "Location of historical marker. This praying town was established in 1674 and lasted only a year until the onset of King Philip's War"
+					"popupContent": "Location of historical marker. This praying town was established in 1674 and lasted only a year until the onset of King Philip's War",
+					"type": "new"
 				}
 			},
 			{
@@ -265,7 +269,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Waeuntuk",
-					"popupContent": "Identified as 'east of the present centre of the town, on the plain between the mumford and West Rivers'"
+					"popupContent": "Identified as 'east of the present centre of the town, on the plain between the mumford and West Rivers'",
+					"type": "new"
 				}
 			},
 			{
@@ -279,7 +284,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Quantisset",
-					"popupContent": "This location, now known as 'Fort Hill' was the site of the Quantisset Village/Fort"
+					"popupContent": "This location, now known as 'Fort Hill' was the site of the Quantisset Village/Fort",
+					"type": "new"
 				}
 			},
 			{
@@ -293,7 +299,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Maanexit",
-					"popupContent": "Located in what is now the village of Fabyan, Maanexit was located just east of the Quinebaug River"
+					"popupContent": "Located in what is now the village of Fabyan, Maanexit was located just east of the Quinebaug River",
+					"type": "new"
 				}
 			},
 			{
@@ -307,7 +314,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Webquasset",
-					"popupContent": "Webquasset was the largest of the three Connecticut Praying Towns, located six miles west of the Quinebaug River and 'near the bend in the outlet from Woodstock Pond' which is now called Roseland Lake"
+					"popupContent": "Webquasset was the largest of the three Connecticut Praying Towns, located six miles west of the Quinebaug River and 'near the bend in the outlet from Woodstock Pond' which is now called Roseland Lake",
+					"type": "new"
 				}
 			},
 			
@@ -330,7 +338,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Okkokonimesit",
-					"popupContent": "Overall boundary of praying town of Okkokonimesit"
+					"popupContent": "Overall boundary of praying town of Okkokonimesit",
+					"type": "old"
 				}
 			},
 			{
@@ -349,7 +358,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Okkokonimesit planting field",
-					"popupContent": "The Okkokonimesit Indians' primary planting field"
+					"popupContent": "The Okkokonimesit Indians' primary planting field",
+					"type": "old"
 				}
 			},
 			{
@@ -368,7 +378,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Nashoba",
-					"popupContent": "Overall boundary of praying town of Nashoba"
+					"popupContent": "Overall boundary of praying town of Nashoba",
+					"type": "old"
 				}
 			}
 		]	
