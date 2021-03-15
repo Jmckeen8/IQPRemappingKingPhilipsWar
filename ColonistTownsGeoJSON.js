@@ -35,13 +35,13 @@ var colonistTowns =
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-72.102222,
-						42.213611
+						-72.124519,
+						42.227873
 					]
 				},
 				"properties":{
-					"name": "Town of Brookfield",
-					"popupContent": "Attack on Brookfield - August 2-4, 1675"
+					"name": "Foster Hill, Brookfield",
+					"popupContent": "Location of the primary settlement in the town of Brookfield."
 				}
 			},
 			{
