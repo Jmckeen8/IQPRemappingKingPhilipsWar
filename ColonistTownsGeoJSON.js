@@ -91,8 +91,8 @@ var colonistTowns =
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-71.68683,
-						42.44163
+						-71.416111,
+						42.383056
 					]
 				},
 				"properties":{
