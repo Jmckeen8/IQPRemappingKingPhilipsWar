@@ -263,6 +263,33 @@ var colonistTowns =
 					"name": "Town of Lancaster",
 					"popupContent": "The Town of Lancaster began in the Nashaway area coexisting with the Indian village of Waushacum, with the original land granted to a group of undertakers.  However, the settler colonists expanded their territory through Nashaway Indians' repayment of debts, and had considerable land holdings in the area by the time of King Philip's War. The town of Lancaster was raided on February 10, 1676 by Nipmuc Indians"
 				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Polygon",
+					"coordinates": [
+						[
+							[-72.072565, 42.186113],
+							[-72.164166, 42.199778],
+							[-72.160603, 42.215864],
+							[-72.163804, 42.220606],
+							[-72.167308, 42.224011],
+							[-72.174084, 42.225544],
+							[-72.160838, 42.234839],
+							[-72.147217, 42.236582],
+							[-72.15440, 42.254652],
+							[-72.053589, 42.254652],
+							[-72.067223, 42.205053],
+							[-72.082644, 42.200492],
+							[-72.076247, 42.192729]
+						]
+					]
+				},
+				"properties":{
+					"name": "Town of Brookfield",
+					"popupContent": "Settler Colonist presence at Brookfield was established as the Quaboag Plantation, and was quite close to the Indian villages in the Quaboag area. Brookfield was attacked by Nipmuc Indians August 2-4, 1675."
+				}
 			}
 		]	
 	};
