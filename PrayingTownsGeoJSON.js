@@ -17,21 +17,21 @@ var prayingTowns =
 					"type": "old"
 				}
 			},
-			{
-				"type": "Feature",
-				"geometry": {
-					"type": "Point",
-					"coordinates": [
-						-70.880556,
-						41.906111
-					]
-				},
-				"properties":{
-					"name": "Namasket",
-					"popupContent": "Christian Indian town where John Sassamon served as minister",
-					"type": "old"
-				}
-			},
+//			{
+//				"type": "Feature",
+//				"geometry": {
+//					"type": "Point",
+//					"coordinates": [
+//						-70.880556,
+//						41.906111
+//					]
+//				},
+//				"properties":{
+//					"name": "Namasket",
+//					"popupContent": "Christian Indian town where John Sassamon served as minister",
+//					"type": "old"
+//				}
+//			},
 			{
 				"type": "Feature",
 				"geometry": {

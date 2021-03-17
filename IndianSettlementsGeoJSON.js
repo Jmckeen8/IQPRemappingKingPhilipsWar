@@ -83,7 +83,35 @@ var indianSettlements =
 				},
 				"properties": {
 					"name": "Upper Village, Menimesit",
-					"popupContent": "Three settlements made up the area of Menimesit, which was created as a refuge area for Nipmuc Indians at the onset of the war. Menimesit was well secreted in a marsh area, making it difficult for the colonists to locate. This particular village is believed to be the site that Mary Rowlandson was held captive at from Febryary 12 to February 28."
+					"popupContent": "Three settlements made up the area of Menimesit, which was created as a refuge area for Nipmuc Indians at the onset of the war. Menimesit was well secreted in a marsh area, making it difficult for the colonists to locate. This particular village is believed to be the site that Mary Rowlandson was held captive at from February 12 to February 28."
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-71.596412,
+						41.473072
+					]
+				},
+				"properties": {
+					"name": "Great Swamp",
+					"popupContent": "The Great Swamp Fight, which took place on December 19, 1675, was the primary battle that brought the previously neutral Narragansetts into the war. Located at the site of a large Narragansett fort, it is widely belived that the colonists were victorious, and it's estimated that about 600 Indians were killed during the battle. This marker is placed at the site of the Great Swamp Fight Monument, at the spot believed to be near the location of the battle."
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-71.24013,
+						41.674565
+					]
+				},
+				"properties": {
+					"name": "Montaup",
+					"popupContent": "Also known as Mount Hope, this was the site of a Wampanoag Village. It's notable as serving as the primary center of operations for King Philip during the war and as the place where he was finally captured and executed."
 				}
 			}
 		]	
