@@ -118,6 +118,24 @@
 		shadowSize: [41, 41]
 	});
 	
+	var yellowIcon = new L.Icon({
+		iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png',
+		shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+		iconSize: [25, 41],
+		iconAnchor: [12, 41],
+		popupAnchor: [1, -34],
+		shadowSize: [41, 41]
+	});
+	
+	var orangeIcon = new L.Icon({
+		iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png',
+		shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+		iconSize: [25, 41],
+		iconAnchor: [12, 41],
+		popupAnchor: [1, -34],
+		shadowSize: [41, 41]
+	});
+	
 	
 	//var marker = L.marker([42.44163, -71.68683]).addTo(mymap);
 	
@@ -177,12 +195,28 @@
 
 		layer.bindPopup(popupContent);
 		
-		if (layer instanceof L.Marker){
+		if (layer instanceof L.Marker && feature.properties.type=="Nipmuc"){
 			layer.setIcon(goldIcon);
 		}
 		
-		if (layer instanceof L.Path){
+		if (layer instanceof L.Path && feature.properties.type=="Nipmuc"){
 			layer.setStyle({fillColor:'gold', color:'gold'});
+		}
+		
+		if (layer instanceof L.Marker && feature.properties.type=="Narragansett"){
+			layer.setIcon(yellowIcon);
+		}
+		
+		if (layer instanceof L.Path && feature.properties.type=="Narragansett"){
+			layer.setStyle({fillColor:'yellow', color:'yellow'});
+		}
+		
+		if (layer instanceof L.Marker && feature.properties.type=="Wampanoag"){
+			layer.setIcon(orangeIcon);
+		}
+		
+		if (layer instanceof L.Path && feature.properties.type=="Wampanoag"){
+			layer.setStyle({fillColor:'orange', color:'orange'});
 		}
 	}
 	
@@ -218,7 +252,7 @@
 	var overlayMaps = {
 		"Colonist Towns": COLTOWNS,
 		"Praying Towns": PRAYTOWNS,
-		"Indian Settlements": INDSETTLEMENTS
+		"Indian Villages": INDSETTLEMENTS
 	};
 	
 	//control for map layers (both base map and points)
@@ -233,8 +267,10 @@
 		div.innerHTML += '<i style="background: #CB2B3E"></i> <span>Colonist Town</span><br>';
 		div.innerHTML += '<i style="background: #2A81CB"></i> <span>Praying Town (Old)</span><br>';
 		div.innerHTML += '<i style="background: #2AAD27"></i> <span>Praying Town (New)</span><br>';
-		div.innerHTML += '<i style="background: #9C2BCB"></i> <span>Praying Indian Internment Locations</span><br>';
-		div.innerHTML += '<i style="background: #CAC428"></i> <span>Indian Settlement</span><br>';
+		div.innerHTML += '<i style="background: #9C2BCB"></i> <span>Praying Indian Internment Location</span><br>';
+		div.innerHTML += '<i style="background: #FFD326"></i> <span>Nipmuc Village</span><br>';
+		div.innerHTML += '<i style="background: #CAC428"></i> <span>Narragansett Village</span><br>';
+		div.innerHTML += '<i style="background: #CB8427"></i> <span>Wampanoag Village</span><br>';
 		
 		return div;
 	};
