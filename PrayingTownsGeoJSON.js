@@ -42,7 +42,7 @@ var prayingTowns =
 					]
 				},
 				"properties":{
-					"name": "Natick Meetinghosue",
+					"name": "Natick Meetinghouse",
 					"popupContent": "Meetinghouse constructed by Christian Indians with support from John Eliot",
 					"type": "old"
 				}
