@@ -1,4 +1,4 @@
-var indianSettlements = 
+var indianVillages = 
 	{
 		"type": "FeatureCollection",
 		"features": [
