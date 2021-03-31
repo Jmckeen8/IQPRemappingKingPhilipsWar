@@ -121,6 +121,51 @@ var indianSettlements =
 					"popupContent": "Also known as Mount Hope, this was the site of a Wampanoag Village. It's notable as serving as the primary center of operations for King Philip during the war and as the place where he was finally captured and executed.",					
 					"type": "Wampanoag"
 				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-71.308813,
+						41.770797
+					]
+				},
+				"properties": {
+					"name": "Sowams",
+					"popupContent": "Sowams was a primary settlement of the Wampanoag (Pokanoket) Indians. It was used as the primary headquarters for Massasoit when he was the sachem of the Wampanoag tribes. In addition, the name Sowams can also be used to refer to the broader region, including the many planting areas that the Indians in the area used. Sowams was known for its rich, fertile lands, which made it attractive to colonial efforts to acquire the land.",					
+					"type": "Wampanoag"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-71.204676,
+						41.716274
+					]
+				},
+				"properties": {
+					"name": "Mattapoisett",
+					"popupContent": "Mattapoisett was one of several planting areas used by Indians in the Sowams region. It's notable as being the place where Weetamoo grew up.",					
+					"type": "Wampanoag"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-71.266993,
+						41.734385
+					]
+				},
+				"properties": {
+					"name": "Kickemuit",
+					"popupContent": "Kickemuit was one of several planting areas used by Indians in the Sowams region.",					
+					"type": "Wampanoag"
+				}
 			}
 		]	
 	};
