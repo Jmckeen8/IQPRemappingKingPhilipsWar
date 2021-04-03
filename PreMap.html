@@ -160,6 +160,24 @@
 		}
 	}
 	
+	//establishing filter for displaying layer with only old praying towns
+	function filterOldPrayingTowns(feature){
+		if(feature.properties.type=="old"){
+			return true;
+		} else{
+			return false;
+		}
+	}
+	
+	//establishing filter for displaying layer with only new praying towns
+	function filterNewPrayingTowns(feature){
+		if(feature.properties.type=="new"){
+			return true;
+		} else{
+			return false;
+		}
+	}
+	
 	//This function is called on every GeoJSON feature imported from the PrayingTownsGeoJSON file
 	function onEachPrayingTown(feature, layer) {
 		var popupContent = "";
@@ -185,6 +203,33 @@
 		
 		if (layer instanceof L.Path && feature.properties.type=="internment"){
 			layer.setStyle({fillColor:'violet', color:'violet'});
+		}
+	}
+	
+	//establishing filter for displaying layer with only Nipmuc Indian Villages
+	function filterNipmucIndianVillages(feature){
+		if(feature.properties.type=="Nipmuc"){
+			return true;
+		} else{
+			return false;
+		}
+	}
+	
+	//establishing filter for displaying layer with only Wampanoag Indian Villages
+	function filterWampanoagIndianVillages(feature){
+		if(feature.properties.type=="Wampanoag"){
+			return true;
+		} else{
+			return false;
+		}
+	}
+	
+	//establishing filter for displaying layer with only Narragansett Indian Villages
+	function filterNarragansettIndianVillages(feature){
+		if(feature.properties.type=="Narragansett"){
+			return true;
+		} else{
+			return false;
 		}
 	}
 	
@@ -231,14 +276,34 @@
 		onEachFeature: onEachColonistTown
 	});
 	
-	//Importing Praying Towns from GeoJSON and run onEachFeatureFunction for each feature
-	var PRAYTOWNS = L.geoJSON(prayingTowns, {
-		onEachFeature: onEachPrayingTown
+	//Importing Old Praying Towns from GeoJSON and run onEachFeatureFunction for each feature
+	var OLDPRAYTOWNS = L.geoJSON(prayingTowns, {
+		onEachFeature: onEachPrayingTown,
+		filter: filterOldPrayingTowns
 	});
 	
-	//Importing Indian Villages from GeoJSON and run onEachFeatureFunction for each feature
-	var INDVILLAGES = L.geoJSON(indianVillages, {
-		onEachFeature: onEachIndianVillage
+	//Importing New Praying Towns from GeoJSON and run onEachFeatureFunction for each feature
+	var NEWPRAYTOWNS = L.geoJSON(prayingTowns, {
+		onEachFeature: onEachPrayingTown,
+		filter: filterNewPrayingTowns
+	});
+	
+	//Importing Nipmuc Villages from GeoJSON and run onEachFeatureFunction for each feature
+	var NIPMUCVILLAGES = L.geoJSON(indianVillages, {
+		onEachFeature: onEachIndianVillage,
+		filter: filterNipmucIndianVillages
+	});
+	
+	//Importing Wampanoag Villages from GeoJSON and run onEachFeatureFunction for each feature
+	var WAMPANOAGVILLAGES = L.geoJSON(indianVillages, {
+		onEachFeature: onEachIndianVillage,
+		filter: filterWampanoagIndianVillages
+	});
+	
+	//Importing Narragansett Villages from GeoJSON and run onEachFeatureFunction for each feature
+	var NARRAGANSETTVILLAGES = L.geoJSON(indianVillages, {
+		onEachFeature: onEachIndianVillage,
+		filter: filterNarragansettIndianVillages
 	});
 	
 	
@@ -246,7 +311,7 @@
 	var mymap = L.map('mapid', {
 		center: [42.445, -71.68],
 		zoom: 8,
-		layers: [MAP, COLTOWNS, PRAYTOWNS, INDVILLAGES]
+		layers: [MAP, COLTOWNS, OLDPRAYTOWNS, NEWPRAYTOWNS, NIPMUCVILLAGES, WAMPANOAGVILLAGES, NARRAGANSETTVILLAGES]
 	});
 	
 	//adding control for the layers
@@ -260,8 +325,11 @@
 	//overlays (may be stacked)
 	var overlayMaps = {
 		"Colonist Towns": COLTOWNS,
-		"Praying Towns": PRAYTOWNS,
-		"Indian Villages": INDVILLAGES
+		"Praying Towns (Old)": OLDPRAYTOWNS,
+		"Praying Towns (New)": NEWPRAYTOWNS,
+		"Nipmuc Villages": NIPMUCVILLAGES,
+		"Wampanoag Villages": WAMPANOAGVILLAGES,
+		"Narragansett Villages": NARRAGANSETTVILLAGES
 	};
 	
 	//control for map layers (both base map and points)
