@@ -13,7 +13,9 @@ var prayingTowns =
 				},
 				"properties": {
 					"name": "The John Eliot Oak, Natick",
-					"popupContent": "John Eliot establishes a location to preach to and answer questions from the Praying Indians",
+					"prewar": "John Eliot establishes a location to preach to and answer questions from the Praying Indians",
+					"wartime": "",
+					"postwar": "",
 					"type": "old"
 				}
 			},
@@ -43,7 +45,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Natick Meetinghouse",
-					"popupContent": "Meetinghouse constructed by Christian Indians with support from John Eliot",
+					"prewar": "Meetinghouse constructed by Christian Indians with support from John Eliot",
+					"wartime": "",
+					"postwar": "",
 					"type": "old"
 				}
 			},
@@ -58,7 +62,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Hassanemesit",
-					"popupContent": "James Printer's hometown, attacked by Nipmucs in early November, 1675",
+					"prewar": "James Printer's hometown, attacked by Nipmucs in early November, 1675",
+					"wartime": "",
+					"postwar": "",
 					"type": "old"
 				}
 			},
@@ -73,7 +79,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Deer Island",
-					"popupContent": "October 13, 1675 - As tensions between the settler colonists and Indigenous tribes continued to rise, the Massachusetts Council ordered all Christian Indians be relocated to Deer Island. Conditions on the island were poor, with little food and shelter, and many of the Christian Indians died before the group was finally released in late May of 1676",
+					"prewar": "October 13, 1675 - As tensions between the settler colonists and Indigenous tribes continued to rise, the Massachusetts Council ordered all Christian Indians be relocated to Deer Island. Conditions on the island were poor, with little food and shelter, and many of the Christian Indians died before the group was finally released in late May of 1676",
+					"wartime": "",
+					"postwar": "",
 					"type": "internment"
 				}
 			},
@@ -88,7 +96,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Long Island",
-					"popupContent": "Praying Indians were held on Long Island in addition to Deer Island during the winter of 1675 to 1676.",
+					"prewar": "Praying Indians were held on Long Island in addition to Deer Island during the winter of 1675 to 1676.",
+					"wartime": "",
+					"postwar": "",
 					"type": "internment"
 				}
 			},
@@ -103,7 +113,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Great Brewster Island",
-					"popupContent": "A group of nine Praying Indian women and six children were held on Great Brewseter Island instead of the other Boston Harbor islands that were used for internment duirng King Philip's War. The Massachusetts State Archives state that these women were not willing to join their husbands in internment. ",
+					"prewar": "A group of nine Praying Indian women and six children were held on Great Brewseter Island instead of the other Boston Harbor islands that were used for internment duirng King Philip's War. The Massachusetts State Archives state that these women were not willing to join their husbands in internment. ",
+					"wartime": "",
+					"postwar": "",
 					"type": "internment"
 				}
 			},
@@ -119,7 +131,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Wamesit Village",
-					"popupContent": "Described as along the river banks where the Concord River meets the Merrimack ",
+					"prewar": "Described as along the river banks where the Concord River meets the Merrimack ",
+					"wartime": "",
+					"postwar": "",
 					"type": "old"
 				}
 			},
@@ -134,7 +148,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Wamesit Meetinghouse Hill",
-					"popupContent": "Location of John Eliot's Meetinghouse to preach to the Wamesits",
+					"prewar": "Location of John Eliot's Meetinghouse to preach to the Wamesits",
+					"wartime": "",
+					"postwar": "",
 					"type": "old"
 				}
 			},
@@ -149,7 +165,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Fort Meadow, Okkokonimesit",
-					"popupContent": "Used as a fishing outpost along the falls of Fort Meadow Brook. Used in winter to bury and secure the summer harvest",
+					"prewar": "Used as a fishing outpost along the falls of Fort Meadow Brook. Used in winter to bury and secure the summer harvest",
+					"wartime": "",
+					"postwar": "",
 					"type": "old"
 				}
 			},
@@ -164,7 +182,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Punkapog",
-					"popupContent": "Location of historical marker placed on the northern line of the area",
+					"prewar": "Location of historical marker placed on the northern line of the area",
+					"wartime": "",
+					"postwar": "",
 					"type": "old"
 				}
 			},
@@ -179,7 +199,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Makunkokoag",
-					"popupContent": "Marker placed on area known as Magunco Hill",
+					"prewar": "Marker placed on area known as Magunco Hill",
+					"wartime": "",
+					"postwar": "",
 					"type": "old"
 				}
 			},
@@ -194,7 +216,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Sarah Doublet Forest, Nashoba",
-					"popupContent": "After the inhabitants of Nashoba were forced to Deer Island during the war, much of the village was parceled off for the colonists. The small part that remained for those who returned remains as the Sarah Doublet Forest",
+					"prewar": "After the inhabitants of Nashoba were forced to Deer Island during the war, much of the village was parceled off for the colonists. The small part that remained for those who returned remains as the Sarah Doublet Forest",
+					"wartime": "",
+					"postwar": "",
 					"type": "old"
 				}
 			},
@@ -209,7 +233,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Nashoba Indian Fort",
-					"popupContent": "Originally constructed to defend against Mohawk attacks, the exact location of the fort has been lost to history, but this point is one of the educated guesses that exist",
+					"prewar": "Originally constructed to defend against Mohawk attacks, the exact location of the fort has been lost to history, but this point is one of the educated guesses that exist",
+					"wartime": "",
+					"postwar": "",
 					"type": "old"
 				}
 			},
@@ -224,7 +250,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Manchaug, village",
-					"popupContent": "Gookin identified the location of the village on what is now Whittier's Hill",
+					"prewar": "Gookin identified the location of the village on what is now Whittier's Hill",
+					"wartime": "",
+					"postwar": "",
 					"type": "new"
 				}
 			},
@@ -239,7 +267,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Manchaug Pond",
-					"popupContent": "Evidence of Indian activity exists on north shore of Pond, closest to the village",
+					"prewar": "Evidence of Indian activity exists on north shore of Pond, closest to the village",
+					"wartime": "",
+					"postwar": "",
 					"type": "new"
 				}
 			},
@@ -254,7 +284,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Chabunakonkomug",
-					"popupContent": "Location of historical marker. This praying town was established in 1674 and lasted only a year until the onset of King Philip's War",
+					"prewar": "Location of historical marker. This praying town was established in 1674 and lasted only a year until the onset of King Philip's War",
+					"wartime": "",
+					"postwar": "",
 					"type": "new"
 				}
 			},
@@ -269,7 +301,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Waeuntuk",
-					"popupContent": "Identified as 'east of the present centre of the town, on the plain between the mumford and West Rivers'",
+					"prewar": "Identified as 'east of the present centre of the town, on the plain between the mumford and West Rivers'",
+					"wartime": "",
+					"postwar": "",
 					"type": "new"
 				}
 			},
@@ -284,7 +318,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Quantisset",
-					"popupContent": "This location, now known as 'Fort Hill' was the site of the Quantisset Village/Fort",
+					"prewar": "This location, now known as 'Fort Hill' was the site of the Quantisset Village/Fort",
+					"wartime": "",
+					"postwar": "",
 					"type": "new"
 				}
 			},
@@ -299,7 +335,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Maanexit",
-					"popupContent": "Located in what is now the village of Fabyan, Maanexit was located just east of the Quinebaug River",
+					"prewar": "Located in what is now the village of Fabyan, Maanexit was located just east of the Quinebaug River",
+					"wartime": "",
+					"postwar": "",
 					"type": "new"
 				}
 			},
@@ -314,7 +352,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Webquasset",
-					"popupContent": "Webquasset was the largest of the three Connecticut Praying Towns, located six miles west of the Quinebaug River and 'near the bend in the outlet from Woodstock Pond' which is now called Roseland Lake",
+					"prewar": "Webquasset was the largest of the three Connecticut Praying Towns, located six miles west of the Quinebaug River and 'near the bend in the outlet from Woodstock Pond' which is now called Roseland Lake",
+					"wartime": "",
+					"postwar": "",
 					"type": "new"
 				}
 			},
@@ -338,7 +378,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Okkokonimesit",
-					"popupContent": "Overall boundary of praying town of Okkokonimesit",
+					"prewar": "Overall boundary of praying town of Okkokonimesit",
+					"wartime": "",
+					"postwar": "",
 					"type": "old"
 				}
 			},
@@ -358,7 +400,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Okkokonimesit planting field",
-					"popupContent": "The Okkokonimesit Indians' primary planting field",
+					"prewar": "The Okkokonimesit Indians' primary planting field",
+					"wartime": "",
+					"postwar": "",
 					"type": "old"
 				}
 			},
@@ -378,7 +422,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Nashoba",
-					"popupContent": "Overall boundary of praying town of Nashoba",
+					"prewar": "Overall boundary of praying town of Nashoba",
+					"wartime": "",
+					"postwar": "",
 					"type": "old"
 				}
 			}
