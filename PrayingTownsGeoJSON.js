@@ -79,8 +79,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Deer Island",
-					"prewar": "October 13, 1675 - As tensions between the settler colonists and Indigenous tribes continued to rise, the Massachusetts Council ordered all Christian Indians be relocated to Deer Island. Conditions on the island were poor, with little food and shelter, and many of the Christian Indians died before the group was finally released in late May of 1676",
-					"wartime": "",
+					"prewar": "",
+					"wartime": "October 13, 1675 - As tensions between the settler colonists and Indigenous tribes continued to rise, the Massachusetts Council ordered all Christian Indians be relocated to Deer Island. Conditions on the island were poor, with little food and shelter, and many of the Christian Indians died before the group was finally released in late May of 1676",
 					"postwar": "",
 					"type": "internment"
 				}
@@ -96,8 +96,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Long Island",
-					"prewar": "Praying Indians were held on Long Island in addition to Deer Island during the winter of 1675 to 1676.",
-					"wartime": "",
+					"prewar": "",
+					"wartime": "Praying Indians were held on Long Island in addition to Deer Island during the winter of 1675 to 1676.",
 					"postwar": "",
 					"type": "internment"
 				}
@@ -113,8 +113,8 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Great Brewster Island",
-					"prewar": "A group of nine Praying Indian women and six children were held on Great Brewseter Island instead of the other Boston Harbor islands that were used for internment duirng King Philip's War. The Massachusetts State Archives state that these women were not willing to join their husbands in internment. ",
-					"wartime": "",
+					"prewar": "",
+					"wartime": "A group of nine Praying Indian women and six children were held on Great Brewseter Island instead of the other Boston Harbor islands that were used for internment duirng King Philip's War. The Massachusetts State Archives state that these women were not willing to join their husbands in internment.",
 					"postwar": "",
 					"type": "internment"
 				}
@@ -216,9 +216,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Sarah Doublet Forest, Nashoba",
-					"prewar": "After the inhabitants of Nashoba were forced to Deer Island during the war, much of the village was parceled off for the colonists. The small part that remained for those who returned remains as the Sarah Doublet Forest",
+					"prewar": "",
 					"wartime": "",
-					"postwar": "",
+					"postwar": "After the inhabitants of Nashoba were forced to Deer Island during the war, much of the village was parceled off for the colonists. The small part that remained for those who returned remains as the Sarah Doublet Forest",
 					"type": "old"
 				}
 			},

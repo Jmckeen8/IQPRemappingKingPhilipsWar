@@ -30,8 +30,8 @@ var indianVillages =
 				},
 				"properties": {
 					"name": "Wekabaug Village, Quaboag",
-					"prewar": "Quaboag was a Nipmuc area with villages along the Quaboag River. Quaboag served as a crossroads for multiple trails. During August 1675, Quaboag served as the start point for an expidition to Menimesit. This is one of two villages that, by the time of King Philip's War, bordered the colonial town of Brookfield",
-					"wartime": "",
+					"prewar": "Quaboag was a Nipmuc area with villages along the Quaboag River. Quaboag served as a crossroads for multiple trails. ",
+					"wartime": "During August 1675, Quaboag served as the start point for an expidition to Menimesit. This is one of two villages that, by the time of King Philip's War, bordered the colonial town of Brookfield",
 					"postwar": "",
 					"type": "Nipmuc"
 				}
@@ -47,8 +47,8 @@ var indianVillages =
 				},
 				"properties": {
 					"name": "Village, Quaboag",
-					"prewar": "Quaboag was a Nipmuc area with villages along the Quaboag River. Quaboag served as a crossroads for multiple trails. During August 1675, Quaboag served as the start point for an expidition to Menimesit. This is one of two villages that, by the time of King Philip's War, bordered the colonial town of Brookfield",
-					"wartime": "",
+					"prewar": "Quaboag was a Nipmuc area with villages along the Quaboag River. Quaboag served as a crossroads for multiple trails. ",
+					"wartime": "During August 1675, Quaboag served as the start point for an expidition to Menimesit. This is one of two villages that, by the time of King Philip's War, bordered the colonial town of Brookfield",
 					"postwar": "",
 					"type": "Nipmuc"
 				}
@@ -64,8 +64,8 @@ var indianVillages =
 				},
 				"properties": {
 					"name": "Lower Village, Menimesit",
-					"prewar": "Three settlements made up the area of Menimesit, which was created as a refuge area for Nipmuc Indians at the onset of the war. Menimesit was well secreted in a marsh area, making it difficult for the colonists to locate. ",
-					"wartime": "",
+					"prewar": "",
+					"wartime": "Three settlements made up the area of Menimesit, which was created as a refuge area for Nipmuc Indians at the onset of the war. Menimesit was well secreted in a marsh area, making it difficult for the colonists to locate. ",
 					"postwar": "",
 					"type": "Nipmuc"
 				}
@@ -81,8 +81,8 @@ var indianVillages =
 				},
 				"properties": {
 					"name": "Middle Village, Menimesit",
-					"prewar": "Three settlements made up the area of Menimesit, which was created as a refuge area for Nipmuc Indians at the onset of the war. Menimesit was well secreted in a marsh area, making it difficult for the colonists to locate. ",
-					"wartime": "",
+					"prewar": "",
+					"wartime": "Three settlements made up the area of Menimesit, which was created as a refuge area for Nipmuc Indians at the onset of the war. Menimesit was well secreted in a marsh area, making it difficult for the colonists to locate. ",
 					"postwar": "",
 					"type": "Nipmuc"
 				}
@@ -98,8 +98,8 @@ var indianVillages =
 				},
 				"properties": {
 					"name": "Upper Village, Menimesit",
-					"prewar": "Three settlements made up the area of Menimesit, which was created as a refuge area for Nipmuc Indians at the onset of the war. Menimesit was well secreted in a marsh area, making it difficult for the colonists to locate. This particular village is believed to be the site that Mary Rowlandson was held captive at from February 12 to February 28.",
-					"wartime": "",
+					"prewar": "",
+					"wartime": "Three settlements made up the area of Menimesit, which was created as a refuge area for Nipmuc Indians at the onset of the war. Menimesit was well secreted in a marsh area, making it difficult for the colonists to locate. This particular village is believed to be the site that Mary Rowlandson was held captive at from February 12 to February 28.",
 					"postwar": "",
 					"type": "Nipmuc"
 				}
@@ -115,8 +115,8 @@ var indianVillages =
 				},
 				"properties": {
 					"name": "Great Swamp",
-					"prewar": "The Great Swamp Fight, which took place on December 19, 1675, was the primary battle that brought the previously neutral Narragansetts into the war. Located at the site of a large Narragansett fort, it is widely belived that the colonists were victorious, and it's estimated that about 600 Indians were killed during the battle. This marker is placed at the site of the Great Swamp Fight Monument, at the spot believed to be near the location of the battle.",
-					"wartime": "",
+					"prewar": "",
+					"wartime": "The Great Swamp Fight, which took place on December 19, 1675, was the primary battle that brought the previously neutral Narragansetts into the war. Located at the site of a large Narragansett fort, it is widely belived that the colonists were victorious, and it's estimated that about 600 Indians were killed during the battle. This marker is placed at the site of the Great Swamp Fight Monument, at the spot believed to be near the location of the battle.",
 					"postwar": "",
 					"type": "Narragansett"
 				}
@@ -132,8 +132,8 @@ var indianVillages =
 				},
 				"properties": {
 					"name": "Montaup",
-					"prewar": "Also known as Mount Hope, this was the site of a Wampanoag Village. It's notable as serving as the primary center of operations for King Philip during the war and as the place where he was finally captured and executed.",	
-					"wartime": "",
+					"prewar": "Also known as Mount Hope, this was the site of a Wampanoag Village.",	
+					"wartime": "Montaup is notable as serving as the primary center of operations for King Philip during the war and as the place where he was finally captured and executed.",
 					"postwar": "",				
 					"type": "Wampanoag"
 				}

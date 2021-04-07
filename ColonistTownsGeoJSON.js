@@ -14,8 +14,8 @@ var colonistTowns =
 				"properties": {
 					"name": "Town of Plymouth",
 					"prewar": "Sassamon's alleged murderers are executed - June 8, 1675",
-					"wartime": "",
-					"postwar": ""
+					"wartime": "..",
+					"postwar": ".."
 				}
 			},
 			{
@@ -29,8 +29,8 @@ var colonistTowns =
 				},
 				"properties":{
 					"name": "Town of Swansea",
-					"prewar": "Wampanoag's first attack on colonists - June 24, 1675",
-					"wartime": "",
+					"prewar": "..",
+					"wartime": "Wampanoag's first attack on colonists - June 24, 1675",
 					"postwar": ""
 				}
 			},
@@ -46,7 +46,7 @@ var colonistTowns =
 				"properties":{
 					"name": "Foster Hill, Brookfield",
 					"prewar": "Location of the primary settlement in the town of Brookfield.",
-					"wartime": "",
+					"wartime": "..",
 					"postwar": ""
 				}
 			},
@@ -61,8 +61,8 @@ var colonistTowns =
 				},
 				"properties":{
 					"name": "Town of Deerfield",
-					"prewar": "Attack on Deerfield - September 1-2, 1675",
-					"wartime": "",
+					"prewar": "..",
+					"wartime": "Attack on Deerfield - September 1-2, 1675",
 					"postwar": ""
 				}
 			},
@@ -77,8 +77,8 @@ var colonistTowns =
 				},
 				"properties":{
 					"name": "Springfield",
-					"prewar": "attack/destruction of Springfield - October 5, 1675",
-					"wartime": "",
+					"prewar": "..",
+					"wartime": "attack/destruction of Springfield - October 5, 1675",
 					"postwar": ""
 				}
 			},
@@ -93,8 +93,8 @@ var colonistTowns =
 				},
 				"properties":{
 					"name": "Town of Medfield",
-					"prewar": "February 21, 1676 - attack on Medfield",
-					"wartime": "",
+					"prewar": "..",
+					"wartime": "February 21, 1676 - attack on Medfield",
 					"postwar": ""
 				}
 			},
@@ -109,8 +109,8 @@ var colonistTowns =
 				},
 				"properties":{
 					"name": "Town of Sudbury",
-					"prewar": "April 21, 1676 - attack on Sudbury",
-					"wartime": "",
+					"prewar": "..",
+					"wartime": "April 21, 1676 - attack on Sudbury",
 					"postwar": ""
 				}
 			},
@@ -125,8 +125,8 @@ var colonistTowns =
 				},
 				"properties":{
 					"name": "Marlborough",
-					"prewar": "Captured Tukapewillin and other Indians harrased and abused by English while trying to escape captivity from the Nipmucks - March 1676",
-					"wartime": "",
+					"prewar": "..",
+					"wartime": "Captured Tukapewillin and other Indians harrased and abused by English while trying to escape captivity from the Nipmucks - March 1676",
 					"postwar": ""
 				}
 			},
@@ -142,8 +142,8 @@ var colonistTowns =
 				"properties":{
 					"name": "Plymouth Court House/Meeting House",
 					"prewar": "Location of numorous interactions (of Legal nature) between Indians and Colonists",
-					"wartime": "",
-					"postwar": ""
+					"wartime": "Location of numorous interactions (of Legal nature) between Indians and Colonists",
+					"postwar": "Location of numorous interactions (of Legal nature) between Indians and Colonists"
 				}
 			},
 			{
@@ -173,9 +173,9 @@ var colonistTowns =
 				},
 				"properties":{
 					"name": "Boston",
-					"prewar": "Public executions of captured Indians, occurred on what is now known as the Boston Common - August and September, 1676",
-					"wartime": "",
-					"postwar": ""
+					"prewar": "..",
+					"wartime": "..",
+					"postwar": "Public executions of captured Indians, occurred on what is now known as the Boston Common - August and September, 1676"
 				}
 			},
 			{
@@ -189,8 +189,8 @@ var colonistTowns =
 				},
 				"properties":{
 					"name": "Stonington",
-					"prewar": "Narragansett Sachem Canochet brough here after capture before being executed",
-					"wartime": "",
+					"prewar": "..",
+					"wartime": "Narragansett Sachem Canochet brough here after capture before being executed",
 					"postwar": ""
 				}
 			},
@@ -205,8 +205,8 @@ var colonistTowns =
 				},
 				"properties":{
 					"name": "Dartmouth, Russell Garrison House",
-					"prewar": "Wampanoag forces raid Dartmouth in an effort to divide the English forces, slowing their pursuit through Pocasset - mid-July 1675",
-					"wartime": "",
+					"prewar": "..",
+					"wartime": "Wampanoag forces raid Dartmouth in an effort to divide the English forces, slowing their pursuit through Pocasset - mid-July 1675",
 					"postwar": ""
 				}
 			},
@@ -221,8 +221,8 @@ var colonistTowns =
 				},
 				"properties":{
 					"name": "Mendon",
-					"prewar": "Nipmuc forces raid Mendon - July 14, 1675",
-					"wartime": "",
+					"prewar": "..",
+					"wartime": "Nipmuc forces raid Mendon - July 14, 1675",
 					"postwar": ""
 				}
 			},
@@ -237,8 +237,8 @@ var colonistTowns =
 				},
 				"properties":{
 					"name": "Rowlandson Rock",
-					"prewar": "Rock Mary Rowlandson and other captives passed by on their first night in captivity - historical marker - February 10-11, 1676",
-					"wartime": "",
+					"prewar": "",
+					"wartime": "Rock Mary Rowlandson and other captives passed by on their first night in captivity - historical marker - February 10-11, 1676",
 					"postwar": ""
 				}
 			},
@@ -253,8 +253,8 @@ var colonistTowns =
 				},
 				"properties":{
 					"name": "Rowlandson Residence",
-					"prewar": "Located right at the center of town, Mary Rowlandson was taken captive during the raid on Lancaster on February 10, 1676. It is speculated that the Rowlandson house may have been specifically targeted because John Rowlandson was the town minister and held high status. ",
-					"wartime": "",
+					"prewar": "",
+					"wartime": "Located right at the center of town, Mary Rowlandson was taken captive during the raid on Lancaster on February 10, 1676. It is speculated that the Rowlandson house may have been specifically targeted because John Rowlandson was the town minister and held high status. ",
 					"postwar": ""
 				}
 			},
@@ -270,7 +270,7 @@ var colonistTowns =
 				"properties":{
 					"name": "Marlborough Meeting House",
 					"prewar": "In 1663, Marlborough proceeded to build their meeting house in the Praying Indians' planting field, technically outside the boundaries of the colonial town.",
-					"wartime": "",
+					"wartime": "..",
 					"postwar": ""
 				}
 			},
@@ -294,8 +294,8 @@ var colonistTowns =
 				},
 				"properties":{
 					"name": "Town of Lancaster",
-					"prewar": "The Town of Lancaster began in the Nashaway area coexisting with the Indian village of Waushacum, with the original land granted to a group of undertakers.  However, the settler colonists expanded their territory through Nashaway Indians' repayment of debts, and had considerable land holdings in the area by the time of King Philip's War. The town of Lancaster was raided on February 10, 1676 by Nipmuc Indians",
-					"wartime": "",
+					"prewar": "The Town of Lancaster began in the Nashaway area coexisting with the Indian village of Waushacum, with the original land granted to a group of undertakers.  However, the settler colonists expanded their territory through Nashaway Indians' repayment of debts, and had considerable land holdings in the area by the time of King Philip's War.",
+					"wartime": "The town of Lancaster was raided on February 10, 1676 by Nipmuc Indians",
 					"postwar": ""
 				}
 			},
@@ -323,8 +323,8 @@ var colonistTowns =
 				},
 				"properties":{
 					"name": "Town of Brookfield",
-					"prewar": "Settler Colonist presence at Brookfield was established as the Quaboag Plantation, and was quite close to the Indian villages in the Quaboag area. Brookfield was attacked by Nipmuc Indians August 2-4, 1675.",
-					"wartime": "",
+					"prewar": "Settler Colonist presence at Brookfield was established as the Quaboag Plantation, and was quite close to the Indian villages in the Quaboag area.",
+					"wartime": "Brookfield was attacked by Nipmuc Indians August 2-4, 1675.",
 					"postwar": ""
 				}
 			}
