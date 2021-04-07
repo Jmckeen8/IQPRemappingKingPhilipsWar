@@ -403,7 +403,8 @@ var prayingTowns =
 					"prewar": "The Okkokonimesit Indians' primary planting field",
 					"wartime": "",
 					"postwar": "",
-					"type": "old"
+					"type": "old",
+					"planting": "true"
 				}
 			},
 			{

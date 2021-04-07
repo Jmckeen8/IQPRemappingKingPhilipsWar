@@ -169,7 +169,8 @@ var indianVillages =
 					"prewar": "Mattapoisett was one of several planting areas used by Indians in the Sowams region. It's notable as being the place where Weetamoo grew up.",	
 					"wartime": "",
 					"postwar": "",				
-					"type": "Wampanoag"
+					"type": "Wampanoag",
+					"planting": "true"
 				}
 			},
 			{
@@ -186,7 +187,8 @@ var indianVillages =
 					"prewar": "Kickemuit was one of several planting areas used by Indians in the Sowams region.",		
 					"wartime": "",
 					"postwar": "",			
-					"type": "Wampanoag"
+					"type": "Wampanoag",
+					"planting": "true"
 				}
 			}
 		]	
