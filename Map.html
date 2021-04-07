@@ -57,7 +57,7 @@
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	<button type="button" style="display:inline-block; font-size:16px;" onclick="wartime()">Wartime Sites of Violence/Battles</button>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<button type="button" style="display:inline-block; font-size:16px;" onclick="postwar()">Post-War Towns and Villages</button>
+	<button type="button" style="display:inline-block; font-size:16px;" onclick="postwar()">Post-War Towns, Villages and Landmarks</button>
 </div>
 
 <!-- Import GeoJSON here. NOTE: These files have .js scripts that declare each JSON object as a variable ready to use -->
@@ -192,6 +192,15 @@
 		shadowSize: [41, 41]
 	});
 	
+	var yellowViolence = new L.Icon({
+		iconUrl: 'icons/violence/violenceicon-darkyellow.png',
+		shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+		iconSize: [25, 41],
+		iconAnchor: [12, 41],
+		popupAnchor: [1, -34],
+		shadowSize: [41, 41]
+	});
+	
 	var orangeIcon = new L.Icon({
 		iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png',
 		shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
@@ -212,6 +221,15 @@
 	
 	var orangeCorn = new L.Icon({
 		iconUrl: 'icons/corn/cornicon-orange.png',
+		shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+		iconSize: [25, 41],
+		iconAnchor: [12, 41],
+		popupAnchor: [1, -34],
+		shadowSize: [41, 41]
+	});
+	
+	var orangeViolence = new L.Icon({
+		iconUrl: 'icons/violence/violenceicon-orange.png',
 		shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
 		iconSize: [25, 41],
 		iconAnchor: [12, 41],
@@ -309,17 +327,17 @@
 
 		layer.bindPopup(popupContent);
 		
-		if (layer instanceof L.Marker && feature.properties.type=="old"){
-			layer.setIcon(blueWetu);
-		}
+		//if (layer instanceof L.Marker && feature.properties.type=="old"){
+		//	layer.setIcon();
+		//}
 		
 		if (layer instanceof L.Marker && feature.properties.type=="old" && feature.properties.planting=="true"){
 			layer.setIcon(blueCorn);
 		}
-		///////
+		
 		
 		if (layer instanceof L.Marker && feature.properties.type=="new"){
-			layer.setIcon(greenWetu);
+			layer.setIcon(greenIcon);
 		}
 		
 		if (layer instanceof L.Path && feature.properties.type=="new"){
@@ -442,7 +460,7 @@
 		layer.bindPopup(popupContent);
 		
 		if (layer instanceof L.Marker && feature.properties.type=="Nipmuc"){
-			layer.setIcon(goldIcon);
+			layer.setIcon(goldWetu);
 		}
 		
 		if (layer instanceof L.Path && feature.properties.type=="Nipmuc"){
@@ -450,7 +468,11 @@
 		}
 		
 		if (layer instanceof L.Marker && feature.properties.type=="Narragansett"){
-			layer.setIcon(yellowIcon);
+			layer.setIcon(yellowWetu);
+		}
+		
+		if (layer instanceof L.Marker && feature.properties.type=="Narragansett" && feature.properties.battle=="true"){
+			layer.setIcon(yellowViolence);
 		}
 		
 		if (layer instanceof L.Path && feature.properties.type=="Narragansett"){
@@ -459,6 +481,10 @@
 		
 		if (layer instanceof L.Marker && feature.properties.type=="Wampanoag"){
 			layer.setIcon(orangeIcon);
+		}
+		
+		if (layer instanceof L.Marker && feature.properties.type=="Wampanoag" && feature.properties.battle=="true"){
+			layer.setIcon(orangeViolence);
 		}
 		
 		if (layer instanceof L.Path && feature.properties.type=="Wampanoag"){

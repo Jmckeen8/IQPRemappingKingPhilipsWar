@@ -118,7 +118,8 @@ var indianVillages =
 					"prewar": "",
 					"wartime": "The Great Swamp Fight, which took place on December 19, 1675, was the primary battle that brought the previously neutral Narragansetts into the war. Located at the site of a large Narragansett fort, it is widely belived that the colonists were victorious, and it's estimated that about 600 Indians were killed during the battle. This marker is placed at the site of the Great Swamp Fight Monument, at the spot believed to be near the location of the battle.",
 					"postwar": "",
-					"type": "Narragansett"
+					"type": "Narragansett",
+					"battle": "true"
 				}
 			},
 			{
@@ -135,7 +136,8 @@ var indianVillages =
 					"prewar": "Also known as Mount Hope, this was the site of a Wampanoag Village.",	
 					"wartime": "Montaup is notable as serving as the primary center of operations for King Philip during the war and as the place where he was finally captured and executed.",
 					"postwar": "",				
-					"type": "Wampanoag"
+					"type": "Wampanoag",
+					"battle": "true"
 				}
 			},
 			{

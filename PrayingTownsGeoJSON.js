@@ -378,7 +378,7 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Okkokonimesit",
-					"prewar": "Overall boundary of praying town of Okkokonimesit",
+					"prewar": "Overall boundary of praying town of Okkokonimesit <br> <br> For more information about land conflicts between Okkokonimesit and Marlborough, <a href='detail/Okkokonimesit.html' target='_blank'>click here</a>.",
 					"wartime": "",
 					"postwar": "",
 					"type": "old"
