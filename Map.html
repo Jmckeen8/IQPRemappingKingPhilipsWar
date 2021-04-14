@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Remapping King Philip's War</title>
+	<title>Remapping King Philip's War: Map</title>
 	
 	<!-- Import Leaflet-provided CSS stylesheet and JS library --> 
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
@@ -48,16 +48,16 @@
 </head>
 
 <body>
-
+<p><a href="index.html">Back to home page</a></p>
 <!-- HTML div for primary map window, ADJUST MAP SIZE HERE -->
 <div id="mapid" style="width: 1200px; height: 700px;"></div>
 <div id="buttons" style="width:1200px; text-align:center">
 	Select a time period to view locations: <br>
-	<button type="button" style="display:inline-block; font-size:16px;" onclick="prewar()">Pre-War Towns, Villages and Landmarks</button>
+	<button type="button" style="display:inline-block; font-size:16px;" onclick="prewar()">Pre-War (before August 1675)</button>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<button type="button" style="display:inline-block; font-size:16px;" onclick="wartime()">Wartime Sites of Violence/Battles</button>
+	<button type="button" style="display:inline-block; font-size:16px;" onclick="wartime()">Wartime (About August 1675-August1676)</button>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<button type="button" style="display:inline-block; font-size:16px;" onclick="postwar()">Post-War Towns, Villages and Landmarks</button>
+	<button type="button" style="display:inline-block; font-size:16px;" onclick="postwar()">Post-War (after August 1676)</button>
 </div>
 
 <!-- Import GeoJSON here. NOTE: These files have .js scripts that declare each JSON object as a variable ready to use -->
@@ -254,7 +254,24 @@
 		popupAnchor: [1, -34],
 		shadowSize: [41, 41]
 	});
+
+	var blueChurch = new L.Icon({
+		iconUrl: 'icons/eliot/eliot-church-icon-final-blue.png',
+		shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+		iconSize: [25, 41],
+		iconAnchor: [12, 41],
+		popupAnchor: [1, -34],
+		shadowSize: [41, 41]
+	});
 	
+	var greenChurch = new L.Icon({
+		iconUrl: 'icons/eliot/eliot-church-icon-final-green.png',
+		shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+		iconSize: [25, 41],
+		iconAnchor: [12, 41],
+		popupAnchor: [1, -34],
+		shadowSize: [41, 41]
+	});
 	
 	//This function is called on every GeoJSON feature imported from the ColonistTownsGeoJSON file
 	function onEachPreColonistTown(feature, layer) {
@@ -331,13 +348,16 @@
 		//	layer.setIcon();
 		//}
 		
+		if (layer instanceof L.Marker && feature.properties.type=="old"){
+			layer.setIcon(blueChurch);
+		}
+		
 		if (layer instanceof L.Marker && feature.properties.type=="old" && feature.properties.planting=="true"){
 			layer.setIcon(blueCorn);
 		}
 		
-		
 		if (layer instanceof L.Marker && feature.properties.type=="new"){
-			layer.setIcon(greenIcon);
+			layer.setIcon(greenChurch);
 		}
 		
 		if (layer instanceof L.Path && feature.properties.type=="new"){
@@ -363,8 +383,12 @@
 
 		layer.bindPopup(popupContent);
 		
+		if (layer instanceof L.Marker && feature.properties.type=="old"){
+			layer.setIcon(blueChurch);
+		}
+
 		if (layer instanceof L.Marker && feature.properties.type=="new"){
-			layer.setIcon(greenIcon);
+			layer.setIcon(greenChurch);
 		}
 		
 		if (layer instanceof L.Path && feature.properties.type=="new"){
@@ -749,6 +773,7 @@
 		div.innerHTML += "<h4>Symbol Legend</h4>";
 		div.innerHTML += '<img src="icons/colonist/colonistmeetinghouse.png" width="30"> <span>Colonist Town</span><br>';
 		div.innerHTML += '<img src="icons/wetu/wetu-icon.png" width="30"> <span>Indian Village</span><br>';
+		div.innerHTML += '<img src="icons/eliot/eliot-church-icon-final.png" width="30"> <span>Praying Town</span><br>'
 		div.innerHTML += '<img src="icons/violence/violenceicon.png" width="30"> <span>Location of Violence</span><br>';
 		div.innerHTML += '<img src="icons/corn/cornicon.png" width="30"> <span>Indian Planting Field</span><br>';
 		div.innerHTML += '<img src="icons/canoe/canoeiconfinal.png" width="30"> <span>Indian Fishing Spot</span><br>';
