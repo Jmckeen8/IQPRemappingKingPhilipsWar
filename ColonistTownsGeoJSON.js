@@ -93,9 +93,9 @@ var colonistTowns =
 				},
 				"properties":{
 					"name": "Town of Medfield",
-					"prewar": "..",
-					"wartime": "February 21, 1676 - attack on Medfield",
-					"postwar": ""
+					"prewar": "The Town of Medfield was originally incorporated in 1636 as part of Dedham, and in 1650 was separated into its own town. Unlike some other colonial towns of the era, it does not appear that Medfield was established particularly close or in conflict with nearby Indian villages or Praying Towns. This pin is located on the site of the original Medfield Meeting House.<br><br> After the attack on Mendon in July of 1675 and that town was abandoned, Medfield became the de-facto 'frontier town' in the region. ",
+					"wartime": 'February 21, 1676 - <a href="detail/Medfield.html">attack on Medfield</a>, where over half the town was burned, many were killed or wounded, and the Nipmuc Indians were able to leave with a solid victory.',
+					"postwar": "After the attack on Medfield, over about half of its homes had been burned. After King Philip was killed in August of 1676, colonists were able to begin rebuilding Medfield. Monetary assistance was provided from the provincial government coming from taxes. "
 				}
 			},
 			{
@@ -119,15 +119,15 @@ var colonistTowns =
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-71.551994,
-						42.347724
+						-71.559555,
+						42.346018
 					]
 				},
 				"properties":{
 					"name": "Marlborough",
-					"prewar": "..",
-					"wartime": "Captured Tukapewillin and other Indians harrased and abused by English while trying to escape captivity from the Nipmucks - March 1676",
-					"postwar": ""
+					"prewar": "Marlborough's early history involves colonists who took issue with those in charge at the town of Sudbury. Marlborough was established by settlers who relocated from Sudbury. Marlborough was established in an area that placed them side-by-side (if not on top) of the Okkokonimesit Praying Indian plantation. The treaty that was negotiated with the Praying Indians, with the assistance of John Eliot, gave the colonists of the Marlborough Plantation first rights to any land given up by the Indians, perhaps providing incentive for the colonists to try to force the Indians off their plantation.",
+					"wartime": "On August 30-31, 1675, Marlborough was the site of an incident between the notoriously brutal Captain Samuel Mosely and local Indians. Mosely falsely accused Praying Indians that had been captured by the Nipmucs for the attack on Lancaster on August 22nd.<br>In March of 1676, Praying Indians that had been recruited to be guides for the colonial army and who had been captured by the Nipmucs, including Tukapewillin--a minister from Hassanemesit, were harrased and abused by colonists in Marlborough while trying to escape captivity back to their colonial allies.<br>On March 26, 1676, Marlborough was attacked by Nipmuc Indians in the morning during a church service (it was a Sabbath day). About a third of the homes in Marlborough were destroyed as well as the meeting house. A counterattack later in the day from the colonists did result in the wounding of about thirty Indians, fourteen of whom died.",
+					"postwar": "Most of the townspeople abandoned their homes in Marlborough after the attack on March 26, 1676, moving in closer towards Boston. However, some of the garrison houses were maintained throughout the rest of the war. After the war, a rebuilding effort did begin, with land from the Okkokonimesit Praying Indian plantation being sold to the colonists."
 				}
 			},
 			{
@@ -270,7 +270,7 @@ var colonistTowns =
 				"properties":{
 					"name": "Marlborough Meeting House",
 					"prewar": "In 1663, Marlborough proceeded to build their meeting house in the Praying Indians' planting field, technically outside the boundaries of the colonial town.",
-					"wartime": "..",
+					"wartime": "The Marlborough Meeting House was one of the buildings that were burned during the attack on March 26, 1676.",
 					"postwar": ""
 				}
 			},

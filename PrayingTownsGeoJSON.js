@@ -378,9 +378,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Okkokonimesit",
-					"prewar": "Overall boundary of praying town of Okkokonimesit <br> <br> For more information about land conflicts between Okkokonimesit and Marlborough, <a href='detail/Okkokonimesit.html' target='_blank'>click here</a>.",
-					"wartime": "",
-					"postwar": "",
+					"prewar": "Overall boundary of praying town of Okkokonimesit <br> <br> More information about <a href='detail/Okkokonimesit.html'>land conflicts between Okkokonimesit and Marlborough</a>.",
+					"wartime": "When all Indians were directed to be confined to five certain plantations on August 31, 1675, Okkokonimesit was the only Praying Indian plantation to be closed at that point, forcing the inhabitants to relocate. These Indians would later be forced to relocate to the Boston Harbor islands again in October. ",
+					"postwar": 'After the war, the Okkokonimesit land was sold to the settler colonists at Marlborough, including some land directly sold to individuals and the rest to the "proprietors of Marlborough." ',
 					"type": "old"
 				}
 			},
