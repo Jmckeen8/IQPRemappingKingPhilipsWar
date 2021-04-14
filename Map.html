@@ -726,11 +726,13 @@
 	var layersControl = L.control.layers(baseMaps, preOverlayMaps).addTo(mymap);
 	
 	//Defining map legend (shows up in bottom left corner)
-	var legend = L.control({position: "bottomleft"});
+	var legend = L.control({position: "bottomleft"});  //legend for colors
+	
+	var legend2 = L.control({position: "bottomright"});  //legend for symbols/icons
 	
 	legend.onAdd = function(map) {
 		var div = L.DomUtil.create("div", "legend");
-		div.innerHTML += "<h4>Legend</h4>";
+		div.innerHTML += "<h4>Color Legend</h4>";
 		div.innerHTML += '<i style="background: #CB2B3E"></i> <span>Colonist Town</span><br>';
 		div.innerHTML += '<i style="background: #2A81CB"></i> <span>Praying Town (Old)</span><br>';
 		div.innerHTML += '<i style="background: #2AAD27"></i> <span>Praying Town (New)</span><br>';
@@ -742,7 +744,23 @@
 		return div;
 	};
 	
+	legend2.onAdd = function(map) {
+		var div = L.DomUtil.create("div", "legend");
+		div.innerHTML += "<h4>Symbol Legend</h4>";
+		div.innerHTML += '<img src="icons/colonist/colonistmeetinghouse.png" width="30"> <span>Colonist Town</span><br>';
+		div.innerHTML += '<img src="icons/wetu/wetu-icon.png" width="30"> <span>Indian Village</span><br>';
+		div.innerHTML += '<img src="icons/violence/violenceicon.png" width="30"> <span>Location of Violence</span><br>';
+		div.innerHTML += '<img src="icons/corn/cornicon.png" width="30"> <span>Indian Planting Field</span><br>';
+		div.innerHTML += '<img src="icons/canoe/canoeiconfinal.png" width="30"> <span>Indian Fishing Spot</span><br>';
+		
+		
+		return div;
+	};
+	
+	
+	
 	legend.addTo(mymap);
+	legend2.addTo(mymap);
 	
 	function prewar(){
 		mymap.eachLayer(function (layer){
