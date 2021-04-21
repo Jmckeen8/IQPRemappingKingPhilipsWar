@@ -388,7 +388,7 @@ var prayingTowns =
 					"name": "Bridgetown, Barbados",
 					"prewar": "",
 					"wartime": "",
-					"postwar": "Bridgeport was one of the key locations in the Carribbean where Indians captured during King Philip's War and sold off into slavery [...]",
+					"postwar": "<a href='detail/PostWarCaptivity.html'>Bridgetown</a> was one of the key locations in the Carribbean where Indians captured during King Philip's War were brought to Barbados and sold into slavery.",
 					"type": "internment"
 				}
 			},
