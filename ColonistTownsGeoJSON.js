@@ -31,7 +31,7 @@ var colonistTowns =
 					"name": "Town of Swansea",
 					"prewar": "..",
 					"wartime": "Wampanoag's first attack on colonists - June 24, 1675",
-					"postwar": ""
+					"postwar": ".."
 				}
 			},
 			{
@@ -47,7 +47,7 @@ var colonistTowns =
 					"name": "Foster Hill, Brookfield",
 					"prewar": "Location of the primary settlement in the town of Brookfield.",
 					"wartime": "..",
-					"postwar": ""
+					"postwar": ".."
 				}
 			},
 			{
@@ -63,7 +63,7 @@ var colonistTowns =
 					"name": "Town of Deerfield",
 					"prewar": "..",
 					"wartime": "Attack on Deerfield - September 1-2, 1675",
-					"postwar": ""
+					"postwar": ".."
 				}
 			},
 			{
@@ -79,7 +79,7 @@ var colonistTowns =
 					"name": "Springfield",
 					"prewar": "..",
 					"wartime": "attack/destruction of Springfield - October 5, 1675",
-					"postwar": ""
+					"postwar": ".."
 				}
 			},
 			{
@@ -111,7 +111,7 @@ var colonistTowns =
 					"name": "Town of Sudbury",
 					"prewar": "..",
 					"wartime": "April 21, 1676 - attack on Sudbury",
-					"postwar": ""
+					"postwar": ".."
 				}
 			},
 			{
@@ -159,7 +159,7 @@ var colonistTowns =
 					"name": "Harvard College",
 					"prewar": "John Sassamon attends Harvard College",
 					"wartime": "",
-					"postwar": ""
+					"postwar": ".."
 				}
 			},
 			{
@@ -191,7 +191,7 @@ var colonistTowns =
 					"name": "Stonington",
 					"prewar": "..",
 					"wartime": "Narragansett Sachem Canochet brough here after capture before being executed",
-					"postwar": ""
+					"postwar": ".."
 				}
 			},
 			{
@@ -207,7 +207,7 @@ var colonistTowns =
 					"name": "Dartmouth, Russell Garrison House",
 					"prewar": "..",
 					"wartime": "Wampanoag forces raid Dartmouth in an effort to divide the English forces, slowing their pursuit through Pocasset - mid-July 1675",
-					"postwar": ""
+					"postwar": ".."
 				}
 			},
 			{
@@ -223,7 +223,7 @@ var colonistTowns =
 					"name": "Mendon",
 					"prewar": "..",
 					"wartime": "Nipmuc forces raid Mendon - July 14, 1675",
-					"postwar": ""
+					"postwar": ".."
 				}
 			},
 			{
@@ -296,7 +296,7 @@ var colonistTowns =
 					"name": "Town of Lancaster",
 					"prewar": "The Town of Lancaster began in the Nashaway area coexisting with the Indian village of Waushacum, with the original land granted to a group of undertakers.  However, the settler colonists expanded their territory through Nashaway Indians' repayment of debts, and had considerable land holdings in the area by the time of King Philip's War.",
 					"wartime": "The town of Lancaster was raided on February 10, 1676 by Nipmuc Indians",
-					"postwar": ""
+					"postwar": ".."
 				}
 			},
 			{
@@ -325,7 +325,7 @@ var colonistTowns =
 					"name": "Town of Brookfield",
 					"prewar": "Settler Colonist presence at Brookfield was established as the Quaboag Plantation, and was quite close to the Indian villages in the Quaboag area.",
 					"wartime": "Brookfield was attacked by Nipmuc Indians August 2-4, 1675.",
-					"postwar": ""
+					"postwar": ".."
 				}
 			}
 		]	

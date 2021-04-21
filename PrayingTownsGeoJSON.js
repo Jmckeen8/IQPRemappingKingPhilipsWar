@@ -62,9 +62,26 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Hassanemesit",
-					"prewar": "James Printer's hometown, attacked by Nipmucs in early November, 1675",
-					"wartime": "",
+					"prewar": "<a href='detail/Hassanamesit.html'>Hassanamesit</a> was established in 1654 with the assistance of John Eliot, and was the third of Eliot's praying towns to be established. It was established on land that was home to an existing Nipmuc village also called Hassanamesit. Hassanamesit is notable as being the hometown of James Printer, an interpreter who worked with John Eliot.",
+					"wartime": "<a href='detail/Hassanamesit.html'>Hassanamesit</a> was one of the praying towns where Indians were confined at the start of the war in August 1675. By October of 1675, the inhabitants were forced to relocate to the Boston Harbor Islands for the remainder of the war.",
 					"postwar": "",
+					"type": "old"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-71.704766,
+						42.21085
+					]
+				},
+				"properties":{
+					"name": "Hassanamisco Reservation",
+					"prewar": "",
+					"wartime": "",
+					"postwar": "After the conclusion of the war, Indians did return to the area. While the size of the Nipmuc holdings dwindled dramatically in the following century or so, there is still a remaining area of about three acres which is still the <a href='detail/Hassanamesit.html'>Hassanamisco Reservation</a> and is still used for tribal activities.",
 					"type": "old"
 				}
 			},
@@ -356,6 +373,23 @@ var prayingTowns =
 					"wartime": "",
 					"postwar": "",
 					"type": "new"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-59.616323,
+						13.104354
+					]
+				},
+				"properties":{
+					"name": "Bridgetown, Barbados",
+					"prewar": "",
+					"wartime": "",
+					"postwar": "Bridgeport was one of the key locations in the Carribbean where Indians captured during King Philip's War and sold off into slavery [...]",
+					"type": "internment"
 				}
 			},
 			

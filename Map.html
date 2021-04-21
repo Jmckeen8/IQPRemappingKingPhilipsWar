@@ -621,10 +621,16 @@
 	});
 	
 	//Importing Internment Towns from GeoJSON and run onEachFeatureFunction for each feature
-	var WARNEWPRAYTOWNS = L.geoJSON(prayingTowns, {
+	var WARINTERNMENT = L.geoJSON(prayingTowns, {
 		onEachFeature: onEachWarPrayingTown,
 		filter: function(feature, layer){
 			return (feature.properties.wartime != "" && feature.properties.type == "internment");
+		}
+	});
+	var POSTINTERNMENT = L.geoJSON(prayingTowns, {
+		onEachFeature: onEachPostPrayingTown,
+		filter: function(feature, layer){
+			return (feature.properties.postwar != "" && feature.properties.type == "internment");
 		}
 	});
 	
@@ -713,9 +719,9 @@
 	//layer groups for easy adding for each time period
 	var preLayerGroup = L.layerGroup([PRECOLTOWNS, PREOLDPRAYTOWNS, PRENEWPRAYTOWNS, PRENIPMUCVILLAGES, PREWAMPANOAGVILLAGES, PRENARRAGANSETTVILLAGES]);
 	
-	var warLayerGroup = L.layerGroup([WARCOLTOWNS, WAROLDPRAYTOWNS, WARNEWPRAYTOWNS, WARNIPMUCVILLAGES, WARWAMPANOAGVILLAGES, WARNARRAGANSETTVILLAGES]);
+	var warLayerGroup = L.layerGroup([WARCOLTOWNS, WAROLDPRAYTOWNS, WARNEWPRAYTOWNS, WARINTERNMENT, WARNIPMUCVILLAGES, WARWAMPANOAGVILLAGES, WARNARRAGANSETTVILLAGES]);
 	
-	var postLayerGroup = L.layerGroup([POSTCOLTOWNS, POSTOLDPRAYTOWNS, POSTNEWPRAYTOWNS, POSTNIPMUCVILLAGES, POSTWAMPANOAGVILLAGES, POSTNARRAGANSETTVILLAGES]);
+	var postLayerGroup = L.layerGroup([POSTCOLTOWNS, POSTOLDPRAYTOWNS, POSTNEWPRAYTOWNS, POSTINTERNMENT, POSTNIPMUCVILLAGES, POSTWAMPANOAGVILLAGES, POSTNARRAGANSETTVILLAGES]);
 	
 	
 	//overlays (may be stacked)
@@ -732,6 +738,7 @@
 		"Colonist Towns": WARCOLTOWNS,
 		"Praying Towns (Old)": WAROLDPRAYTOWNS,
 		"Praying Towns (New)": WARNEWPRAYTOWNS,
+		"Internment Location": WARINTERNMENT,
 		"Nipmuc Villages": WARNIPMUCVILLAGES,
 		"Wampanoag Villages": WARWAMPANOAGVILLAGES,
 		"Narragansett Villages": WARNARRAGANSETTVILLAGES
@@ -741,6 +748,7 @@
 		"Colonist Towns": POSTCOLTOWNS,
 		"Praying Towns (Old)": POSTOLDPRAYTOWNS,
 		"Praying Towns (New)": POSTNEWPRAYTOWNS,
+		"Slavery Location": POSTINTERNMENT,
 		"Nipmuc Villages": POSTNIPMUCVILLAGES,
 		"Wampanoag Villages": POSTWAMPANOAGVILLAGES,
 		"Narragansett Villages": POSTNARRAGANSETTVILLAGES
@@ -760,7 +768,7 @@
 		div.innerHTML += '<i style="background: #CB2B3E"></i> <span>Colonist Town</span><br>';
 		div.innerHTML += '<i style="background: #2A81CB"></i> <span>Praying Town (Old)</span><br>';
 		div.innerHTML += '<i style="background: #2AAD27"></i> <span>Praying Town (New)</span><br>';
-		div.innerHTML += '<i style="background: #9C2BCB"></i> <span>Praying Indian Internment Location</span><br>';
+		div.innerHTML += '<i style="background: #9C2BCB"></i> <span>Indian Internment or Slavery Location</span><br>';
 		div.innerHTML += '<i style="background: #FFD326"></i> <span>Nipmuc Village</span><br>';
 		div.innerHTML += '<i style="background: #CAC428"></i> <span>Narragansett Village</span><br>';
 		div.innerHTML += '<i style="background: #CB8427"></i> <span>Wampanoag Village</span><br>';
