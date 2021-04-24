@@ -385,7 +385,51 @@ var prayingTowns =
 					]
 				},
 				"properties":{
-					"name": "Bridgetown, Barbados",
+					"name": "Bridgetown, Barbados [POINT]",
+					"prewar": "",
+					"wartime": "",
+					"postwar": "<a href='detail/PostWarCaptivity.html'>Bridgetown</a> was one of the key locations in the Carribbean where Indians captured during King Philip's War were brought to Barbados and sold into slavery.",
+					"type": "internment"
+				}
+			},
+
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Polygon",
+					"coordinates": [
+						[
+							[-59.63712617, 13.13361564],
+							[-59.63579439, 13.1318241],
+							[-59.63425234, 13.12530945],
+							[-59.63327103, 13.10218241],
+							[-59.63228972, 13.10543974],
+							[-59.63130841, 13.14078176],
+							[-59.63088785, 13.11032573],
+							[-59.63060748, 13.112443],
+							[-59.63004673, 13.10201954],
+							[-59.62934579, 13.09925081],
+							[-59.62794393, 13.10820847],
+							[-59.62766355, 13.11407166],
+							[-59.6261215, 13.11081433],
+							[-59.62570093, 13.10739414],
+							[-59.62205607, 13.09534202],
+							[-59.61686916, 13.14371336],
+							[-59.61476636, 13.09485342],
+							[-59.61350467, 13.07938111],
+							[-59.6121028, 13.07791531],
+							[-59.61028037, 13.0823127],
+							[-59.61, 13.08785016],
+							[-59.60817757, 13.07693811],
+							[-59.58280374, 13.15690554],
+							[-59.58014019, 13.15104235],
+							[-59.57943925, 13.14436482],
+							[-59.56759346, 13.09631922],
+						]
+					]
+				},
+				"properties":{
+					"name": "Bridgetown, Barbados [AREA]",
 					"prewar": "",
 					"wartime": "",
 					"postwar": "<a href='detail/PostWarCaptivity.html'>Bridgetown</a> was one of the key locations in the Carribbean where Indians captured during King Philip's War were brought to Barbados and sold into slavery.",

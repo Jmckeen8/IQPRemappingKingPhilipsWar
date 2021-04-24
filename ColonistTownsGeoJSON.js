@@ -172,10 +172,26 @@ var colonistTowns =
 					]
 				},
 				"properties":{
-					"name": "Boston",
+					"name": "Bosto Common",
 					"prewar": "..",
 					"wartime": "..",
 					"postwar": "Public executions of captured Indians, occurred on what is now known as the Boston Common - August and September, 1676"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-71.057339,
+						42.359558
+					]
+				},
+				"properties":{
+					"name": "Boston Meeting House",
+					"prewar": "First Boston Meeting House, seat of the Massachusetts Bay Colony government at the time of King Philip's War",
+					"wartime": "First Boston Meeting House, seat of the Massachusetts Bay Colony government at the time of King Philip's War",
+					"postwar": "First Boston Meeting House, seat of the Massachusetts Bay Colony government at the time of King Philip's War"
 				}
 			},
 			{
