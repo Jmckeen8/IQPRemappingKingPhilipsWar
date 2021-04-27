@@ -375,23 +375,23 @@ var prayingTowns =
 					"type": "new"
 				}
 			},
-			{
-				"type": "Feature",
-				"geometry": {
-					"type": "Point",
-					"coordinates": [
-						-59.616323,
-						13.104354
-					]
-				},
-				"properties":{
-					"name": "Bridgetown, Barbados [POINT]",
-					"prewar": "",
-					"wartime": "",
-					"postwar": "<a href='detail/PostWarCaptivity.html'>Bridgetown</a> was one of the key locations in the Carribbean where Indians captured during King Philip's War were brought to Barbados and sold into slavery.",
-					"type": "internment"
-				}
-			},
+			// {
+			// 	"type": "Feature",
+			// 	"geometry": {
+			// 		"type": "Point",
+			// 		"coordinates": [
+			// 			-59.616323,
+			// 			13.104354
+			// 		]
+			// 	},
+			// 	"properties":{
+			// 		"name": "Bridgetown, Barbados [POINT]",
+			// 		"prewar": "",
+			// 		"wartime": "",
+			// 		"postwar": "<a href='detail/PostWarCaptivity.html'>Bridgetown</a> was one of the key locations in the Carribbean where Indians captured during King Philip's War were brought to Barbados and sold into slavery.",
+			// 		"type": "internment"
+			// 	}
+			// },
 
 			{
 				"type": "Feature",
@@ -429,10 +429,10 @@ var prayingTowns =
 					]
 				},
 				"properties":{
-					"name": "Bridgetown, Barbados [AREA]",
+					"name": "Bridgetown, Barbados",
 					"prewar": "",
 					"wartime": "",
-					"postwar": "<a href='detail/PostWarCaptivity.html'>Bridgetown</a> was one of the key locations in the Carribbean where Indians captured during King Philip's War were brought to Barbados and sold into slavery.",
+					"postwar": "<a href='detail/PostWarCaptivity.html'>Bridgetown</a> was the capital and main trading hub of colonial Barbados, where many Indians from New England ended up being sold into slavery after being taken into captivity.",
 					"type": "internment"
 				}
 			},

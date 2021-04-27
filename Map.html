@@ -121,6 +121,8 @@
 	});
 	
 	//ESTABLISHING MARKER COLORS USING leaflet-color-markers library
+
+	var wetuIconHeight = 25;
 	
 	var greenIcon = new L.Icon({
 		iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
@@ -134,10 +136,10 @@
 	var greenWetu = new L.Icon({
 		iconUrl: 'icons/wetu/wetu-icongreen.png',
 		shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-		iconSize: [25, 25],
-		iconAnchor: [12, 41],
+		iconSize: [25, wetuIconHeight],
+		iconAnchor: [12, wetuIconHeight],
 		popupAnchor: [1, -34],
-		shadowSize: [41, 41]
+		shadowSize: [41, wetuIconHeight]
 	});
 	
 	var goldIcon = new L.Icon({
@@ -152,10 +154,10 @@
 	var goldWetu = new L.Icon({
 		iconUrl: 'icons/wetu/wetu-iconyellow.png',
 		shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-		iconSize: [25, 25],
-		iconAnchor: [12, 41],
+		iconSize: [25, wetuIconHeight],
+		iconAnchor: [12, wetuIconHeight],
 		popupAnchor: [1, -34],
-		shadowSize: [41, 41]
+		shadowSize: [41, wetuIconHeight]
 	});
 	
 	var redIcon = new L.Icon({
@@ -202,6 +204,15 @@
 		popupAnchor: [1, -34],
 		shadowSize: [41, 41]
 	});
+
+	var violetShackles = new L.Icon({
+		iconUrl: 'icons/shackles/shackle-iconpurple.png',
+		shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+		iconSize: [25, 30],
+		iconAnchor: [12, 30],
+		popupAnchor: [1, -34],
+		shadowSize: [41, 30]
+	});
 	
 	var yellowIcon = new L.Icon({
 		iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png',
@@ -215,10 +226,10 @@
 	var yellowWetu = new L.Icon({
 		iconUrl: 'icons/wetu/wetu-icondarkyellow.png',
 		shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-		iconSize: [25, 41],
-		iconAnchor: [12, 41],
+		iconSize: [25, wetuIconHeight],
+		iconAnchor: [12, wetuIconHeight],
 		popupAnchor: [1, -34],
-		shadowSize: [41, 41]
+		shadowSize: [41, wetuIconHeight]
 	});
 	
 	var yellowViolence = new L.Icon({
@@ -242,10 +253,10 @@
 	var orangeWetu = new L.Icon({
 		iconUrl: 'icons/wetu/wetu-iconorange.png',
 		shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-		iconSize: [25, 41],
-		iconAnchor: [12, 41],
+		iconSize: [25, wetuIconHeight],
+		iconAnchor: [12, wetuIconHeight],
 		popupAnchor: [1, -34],
-		shadowSize: [41, 41]
+		shadowSize: [41, wetuIconHeight]
 	});
 	
 	var orangeCorn = new L.Icon({
@@ -269,10 +280,10 @@
 	var blueWetu = new L.Icon({
 		iconUrl: 'icons/wetu/wetu-iconblue.png',
 		shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-		iconSize: [25, 41],
-		iconAnchor: [12, 41],
+		iconSize: [25, wetuIconHeight],
+		iconAnchor: [12, wetuIconHeight],
 		popupAnchor: [1, -34],
-		shadowSize: [41, 41]
+		shadowSize: [41, wetuIconHeight]
 	});
 	
 	var blueCorn = new L.Icon({
@@ -425,7 +436,7 @@
 		}
 		
 		if (layer instanceof L.Marker && feature.properties.type=="internment"){
-			layer.setIcon(violetIcon);
+			layer.setIcon(violetShackles);
 		}
 		
 		if (layer instanceof L.Path && feature.properties.type=="internment"){
@@ -452,7 +463,7 @@
 		}
 		
 		if (layer instanceof L.Marker && feature.properties.type=="internment"){
-			layer.setIcon(violetIcon);
+			layer.setIcon(violetShackles);
 		}
 		
 		if (layer instanceof L.Path && feature.properties.type=="internment"){
@@ -814,7 +825,7 @@
 		div.innerHTML += '<img src="icons/violence/violenceicon.png" width="30"> <span>Location of Violence</span><br>';
 		div.innerHTML += '<img src="icons/corn/cornicon.png" width="30"> <span>Indian Planting Field</span><br>';
 		div.innerHTML += '<img src="icons/canoe/canoeiconfinal.png" width="30"> <span>Indian Fishing Spot</span><br>';
-		
+		div.innerHTML += '<img src="icons/shackles/shackle-iconfinal.png" width="30"> <span>Internment or Slavery</span><br>';
 		
 		return div;
 	};
