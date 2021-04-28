@@ -351,7 +351,7 @@ var colonistTowns =
 					"name": "Town of Casco",
 					"prewar": "",
 					"wartime": "",
-					"postwar": "<a href=detail/Casco.html'>Casco</a> (now called Portland) is notable for being the site of the negotiation and signing of the Treaty of Casco 1678, the document which is often used to demarcate the end of King Philip's War."
+					"postwar": "<a href=detail/Casco.html>Casco</a> (now called Portland) is notable for being the site of the negotiation and signing of the Treaty of Casco 1678, the document which is often used to demarcate the end of King Philip's War."
 				}
 			},
 			{

@@ -244,6 +244,23 @@ var indianVillages =
 					"postwar": "",			
 					"type": "Nipmuc"
 				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-71.886944,
+						42.488889
+					]
+				},
+				"properties": {
+					"name": "Mount Wachusett",
+					"prewar": "",	
+					"wartime": "This was a gathering location used by Nipmucs, and was used as a preparation place for Nipmuc, Narragansett, and Wampanoag warriors especially towards the later raids during the war. ",
+					"postwar": "",			
+					"type": "Nipmuc"
+				}
 			}
 		]	
 	};

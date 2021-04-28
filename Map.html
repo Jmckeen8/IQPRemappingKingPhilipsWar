@@ -454,8 +454,12 @@
 
 		layer.bindPopup(popupContent);
 		
+		if (layer instanceof L.Marker && feature.properties.type=="old"){
+			layer.setIcon(blueChurch);
+		}
+
 		if (layer instanceof L.Marker && feature.properties.type=="new"){
-			layer.setIcon(greenIcon);
+			layer.setIcon(greenChurch);
 		}
 		
 		if (layer instanceof L.Path && feature.properties.type=="new"){

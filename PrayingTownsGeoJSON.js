@@ -436,33 +436,51 @@ var prayingTowns =
 					"type": "internment"
 				}
 			},
-			// {
-			// 	"type": "Feature",
-			// 	"geometry": {
-			// 		"type": "LineString",
-			// 		"coordinates": [
-			// 			[
-			// 				[-59.60755, 13.10238],
-			// 				[-59.60837, 13.10283],
-			// 				[-59.6091, 13.10288],
-			// 				[-59.60957, 13.10279],
-			// 				[-59.61088, 13.1021],
-			// 				[-59.61104, 13.10194],
-			// 				[-59.61104, 13.09969],						
-			// 				[-59.61294, 13.09942],
-			// 				[-59.61432, 13.09877],
-			// 				[-59.61459, 13.09854]
-			// 			]
-			// 		]
-			// 	},
-			// 	"properties":{
-			// 		"name": "Roebuck Street, Bridgetown, Barbados",
-			// 		"prewar": "",
-			// 		"wartime": "",
-			// 		"postwar": "<a href='detail/PostWarCaptivity.html'>Roebuck Street</a> was home to many parlimentary meetings and conferences in Barbados, as there was no official state house. One of the actions of this parliament was a 1675 Act to try to prohibit the practice of Indian slaves, including those from the northeast who were taken captive as part of King Philip's War, from being brought to the island.",
-			// 		"type": "internment"
-			// 	}
-			// },
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "LineString",
+					"coordinates": [
+						//[
+							[-59.60755, 13.10238],
+							[-59.60837, 13.10283],
+							[-59.6091, 13.10288],
+							[-59.60957, 13.10279],
+							[-59.61088, 13.1021],
+							[-59.61104, 13.10194],
+							[-59.61104, 13.09969],						
+							[-59.61294, 13.09942],
+							[-59.61432, 13.09877],
+							[-59.61459, 13.09854]
+						//]
+					]
+				},
+				"properties":{
+					"name": "Roebuck Street, Bridgetown, Barbados",
+					"prewar": "",
+					"wartime": "",
+					"postwar": "<a href='detail/PostWarCaptivity.html'>Roebuck Street</a> was home to many parlimentary meetings and conferences in Barbados, as there was no official state house. One of the actions of this parliament was a 1675 Act to try to prohibit the practice of Indian slaves, including those from the northeast who were taken captive as part of King Philip's War, from being brought to the island.",
+					"type": "internment"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": 
+						//[
+							[-59.61088, 13.1021]
+						//]
+					
+				},
+				"properties":{
+					"name": "Roebuck Street, Bridgetown, Barbados",
+					"prewar": "",
+					"wartime": "",
+					"postwar": "<a href='detail/PostWarCaptivity.html'>Roebuck Street</a> was home to many parlimentary meetings and conferences in Barbados, as there was no official state house. One of the actions of this parliament was a 1675 Act to try to prohibit the practice of Indian slaves, including those from the northeast who were taken captive as part of King Philip's War, from being brought to the island.",
+					"type": "internment"
+				}
+			},
 			{
 				"type": "Feature",
 				"geometry": {
