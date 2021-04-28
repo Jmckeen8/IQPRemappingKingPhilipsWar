@@ -328,7 +328,7 @@
 			layer.setIcon(redColTown);
 		}
 		
-		if (layer instanceof L.Path){
+		if (layer instanceof L.Path && feature.properties.prewar){
 			layer.setStyle({fillColor:'red', color:'red'});
 		}
 	}
