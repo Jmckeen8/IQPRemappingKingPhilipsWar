@@ -424,9 +424,9 @@ var colonistTowns =
 				},
 				"properties":{
 					"name": "Littleton",
-					"prewar": 'The town of Littleton began to be re-settled shortly after the war by colonists, and was incorporated in November, 1715.',
+					"prewar": '',
 					"wartime": "",
-					"postwar": ""
+					"postwar": "The town of Littleton began to be re-settled shortly after the war by colonists, and was incorporated in November, 1715."
 				}
 			}
 		]	
