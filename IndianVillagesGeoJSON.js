@@ -192,6 +192,58 @@ var indianVillages =
 					"type": "Wampanoag",
 					"planting": "true"
 				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-71.266993,
+						41.734385
+					]
+				},
+				"properties": {
+					"name": "Assawompsett Pond",
+					"prewar": "Assawompsett pond was the location where John Sassamon's body was found after his death. Sassamon was a Massachusett Indian who was adopted by English colonists at a young age and identified with the Praying Indians. He acted as an interpreter for colonists and a scribe for King Philip and his older brother Alexander. <br><br> Sassamon's death occurred shortly after he visited Plymouth's governor Josiah Winslow, and rumors abounded that Sassamon's killing was retaliation for revealing to Winslow a secret plan by King Philip to block colonial expansion. Three alleged murderers (who were never actually confirmed to be responsible for the act) were executed by the colonists, which made many Wampanoag furious. This event is considered by many to be the flashpoint of rising tensions between the Wampanoag and colonists that started King Philip's War.",		
+					"wartime": "",
+					"postwar": "",			
+					"type": "Wampanoag",
+					"violence": "true"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-72.196799,
+						42.152483
+					]
+				},
+				"properties": {
+					"name": "Ashquoach Village, Quaboag",
+					"prewar": 'A Quaboag village identified as being on a hill of the same name which was identified in the original deed for the Colonist town of Brookfield. Ashquoach was notable "for its great cornfields and its defensive fort" ',		
+					"wartime": "",
+					"postwar": "",			
+					"type": "Nipmuc"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-72.57605,
+						42.081267
+					]
+				},
+				"properties": {
+					"name": "Stockaded Agawam Village",
+					"prewar": "This was the location of an Agawam village that was inhabited prior to the attack on Springfield during King Philip's War. This was one of a few locations where Agawam Indians began to gather as they dealt with large amounts of their land being lost to Springfield settlers. ",	
+					"wartime": "",
+					"postwar": "",			
+					"type": "Nipmuc"
+				}
 			}
 		]	
 	};

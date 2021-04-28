@@ -23,15 +23,15 @@ var colonistTowns =
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-71.189722,
-						41.747778
+						-71.285519,
+						41.772868
 					]
 				},
 				"properties":{
 					"name": "Town of Swansea",
-					"prewar": "..",
-					"wartime": "Wampanoag's first attack on colonists - June 24, 1675",
-					"postwar": ".."
+					"prewar": "The town of Swansea was settled in 1662, after the first Baptist church relocated from Rehoboth as a result of religious intolerance, the land was purchased from Wampanoag Indians in the area. ",
+					"wartime": "Starting on June 20, 1675 and lasting through June 25, the town of Swansea was attacked by Wampanoag Indians. This was the first direct attack by Wampanoags on colonists as part of King Philip's War. The initial attack took place at John Miles' home, the Miles Garrison, where 70 settlers were confined for the duration of the attack. By June 25, practically the entire town had been burned, and some colonists had escaped to Taunton. This point is located at the site of the Miles Garrison.",
+					"postwar": "After the town was initially attacked and burned at the start of King Philip's War, Swansea was rebuilt in the years shortly after the war. "
 				}
 			},
 			{
@@ -55,15 +55,15 @@ var colonistTowns =
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-72.605556,
-						42.544444
+						-72.6037,
+						42.4831
 					]
 				},
 				"properties":{
 					"name": "Town of Deerfield",
-					"prewar": "..",
-					"wartime": "Attack on Deerfield - September 1-2, 1675",
-					"postwar": ".."
+					"prewar": "Prior to King Philip's War, Deerfield was the northwest frontier town of the Massachusetts Bay Colony, not officially incorporated until 1673. The original grant for the land was given to men from the town of Dedham, and was given as compensation after the Praying Indians were given land at Natick. The area was on land occupied by the Pocomtuc Indians, and the deed the colonists obtained for the land was made with a Pocomtuc man who didn't have authority to deed the land and may have been uncertain about what he was signing.",
+					"wartime": "The Battle of Bloody Brook took place on September 18, 1675 when Nipmuc forces (whom the Pocomtuc Indians had allied with) attacked a train of wagons carrying harvested goods from Deerfield to Hadley. All but 10 colonists present in that group were killed, including the leader, captain Thomas Lathrop. The town of Deerfield was abandoned after the attack, and wasn't resettled until two years after the war ended. This point is at the location of a monument was erected in August 1838 to commemorate the battle.",
+					"postwar": ""
 				}
 			},
 			{
@@ -71,15 +71,15 @@ var colonistTowns =
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-71.68683,
-						42.44163
+						-72.593569,
+						42.103849
 					]
 				},
 				"properties":{
 					"name": "Springfield",
-					"prewar": "..",
-					"wartime": "attack/destruction of Springfield - October 5, 1675",
-					"postwar": ".."
+					"prewar": "Springfield was established in 1636, and had strained relations with the local Agawam Indians. Lots of land was taken from the Agawams, especially as land was often used as payment in exchange for English goods. In the years leading up to the war, the Agawams built forts in the area. ",
+					"wartime": "As King Philip's War began out in the east with the Wampanoags, the colonists in the Springfield area were determined to ensure peaceful relation with the local Agawams. There were conflicts, however, beginning with demands from the colonists for the Agawams to relinquish their weapons, which they refused to. <br><br>The attack began on October 5, 1675. 45 of Springfield's 50 houses were burned, as well as mills that were also located in Springfield. While many considered abandoning the town, many residents stayed during the winter of 1675 under siege. This pin is located at the site of John Pynchon's house which served as one of the shelters for residents during the attack. ",
+					"postwar": "Springfield continued to be inhabited after the conclusion of King Philip's War, it was never entirely abandoned. "
 				}
 			},
 			{
@@ -103,15 +103,63 @@ var colonistTowns =
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						-71.416111,
-						42.383056
+						-71.39245391,
+						42.36301515
 					]
 				},
 				"properties":{
 					"name": "Town of Sudbury",
+					"prewar": "The town of Sudbury was established in 1638. By the time of King Philip's War, it was not located particularly close to any Nipmuc villages, the closest Nipmuc settlements were Praying Towns established by John Eliot. There are records, however, of some Nipmuc Indians owning parcels of land within the town. ",
+					"wartime": "",
+					"postwar": "The town of Sudbury continued to be inhabited after the war. "
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-71.41619414,
+						42.36223627
+					]
+				},
+				"properties":{
+					"name": "Town of Sudbury, location of Sudbury Fight",
+					"prewar": "",
+					"wartime": "The town of Sudbury was home of a large battle between a sizeable colonial military force and Nipmuc, Narragansett, and Wampanoag Indians. Occurring on April 21, 1676, it was one of the later battles in the war, coming on the tail of a attacks at Marlborough, as well as Lancaster before that. The combined Native forces attacked the settlement at dawn, as was typical of many Indian attacks during the war. A few different garrison houses were used as shelter during the attack. By the end of the day the causalities were split pretty evenly between the combined Indian and Colonist parties, and the battle was considered to be one of the last Indian victories during the war.",
+					"postwar": ""
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-71.39744282,
+						42.36241266
+					]
+				},
+				"properties":{
+					"name": "Goodnow Garrison House, Sudbury",
 					"prewar": "..",
-					"wartime": "April 21, 1676 - attack on Sudbury",
+					"wartime": "Location of the Goodnow Garrison House, one of a few used during the battle at Sudbury",
 					"postwar": ".."
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-71.38861111,
+						42.37583333
+					]
+				},
+				"properties":{
+					"name": "Haynes Garrison House, Sudbury",
+					"prewar": "",
+					"wartime": "Location of the Haynes Garrison House, one of a few used during the battle at Sudbury",
+					"postwar": ""
 				}
 			},
 			{
@@ -194,22 +242,22 @@ var colonistTowns =
 					"postwar": "First Boston Meeting House, seat of the Massachusetts Bay Colony government at the time of King Philip's War"
 				}
 			},
-			{
-				"type": "Feature",
-				"geometry": {
-					"type": "Point",
-					"coordinates": [
-						-71.905881,
-						41.335957
-					]
-				},
-				"properties":{
-					"name": "Stonington",
-					"prewar": "..",
-					"wartime": "Narragansett Sachem Canochet brough here after capture before being executed",
-					"postwar": ".."
-				}
-			},
+			// {
+			// 	"type": "Feature",
+			// 	"geometry": {
+			// 		"type": "Point",
+			// 		"coordinates": [
+			// 			-71.905881,
+			// 			41.335957
+			// 		]
+			// 	},
+			// 	"properties":{
+			// 		"name": "Stonington",
+			// 		"prewar": "..",
+			// 		"wartime": "Narragansett Sachem Canochet brough here after capture before being executed",
+			// 		"postwar": ".."
+			// 	}
+			// },
 			{
 				"type": "Feature",
 				"geometry": {
@@ -237,9 +285,9 @@ var colonistTowns =
 				},
 				"properties":{
 					"name": "Mendon",
-					"prewar": "..",
-					"wartime": "Nipmuc forces raid Mendon - July 14, 1675",
-					"postwar": ".."
+					"prewar": "Mendon was originally settled in 1662 on land purchased from local Nipmuc Indians.",
+					"wartime": "Mendon was the first settler town within the Massachusetts Bay Colony to be attacked as part of King Philip's War, on July 14, 1675. It marked Nipmuc entry into the war, aligning themselves with the Wampanoags and Narragansetts on King Philip's side. Much of the town was burned down and wasn't resettled until 1680.",
+					"postwar": ""
 				}
 			},
 			{
@@ -293,6 +341,22 @@ var colonistTowns =
 			{
 				"type": "Feature",
 				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-70.256818,
+						43.659098
+					]
+				},
+				"properties":{
+					"name": "Town of Casco",
+					"prewar": "",
+					"wartime": "",
+					"postwar": "<a href=detail/Casco.html'>Casco</a> (now called Portland) is notable for being the site of the negotiation and signing of the Treaty of Casco 1678, the document which is often used to demarcate the end of King Philip's War."
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
 					"type": "Polygon",
 					"coordinates": [
 						[
@@ -311,8 +375,8 @@ var colonistTowns =
 				"properties":{
 					"name": "Town of Lancaster",
 					"prewar": "The Town of Lancaster began in the Nashaway area coexisting with the Indian village of Waushacum, with the original land granted to a group of undertakers.  However, the settler colonists expanded their territory through Nashaway Indians' repayment of debts, and had considerable land holdings in the area by the time of King Philip's War.",
-					"wartime": "The town of Lancaster was raided on February 10, 1676 by Nipmuc Indians",
-					"postwar": ".."
+					"wartime": "An initial attack on Lancaster occurred early in the war during August of 1675 where seven colonists were killed. This prompted the town to establish Garrison houses for additional protections in the event of future attack. The town of Lancaster was raided on February 10, 1676 by a joint force of Nipmuc, Wampanoag, and Narragansett Indians. Like other planned raids of this time during the war, the Indian forces set fire to many buildings, and one estimate had 14 people killed during the raid and another 23 taken captive, including the wife of the town minister, Mary Rowlandson, who wrote a famous captivity narrative about her time with the Indian forces. ",
+					"postwar": ""
 				}
 			},
 			{
@@ -339,9 +403,30 @@ var colonistTowns =
 				},
 				"properties":{
 					"name": "Town of Brookfield",
-					"prewar": "Settler Colonist presence at Brookfield was established as the Quaboag Plantation, and was quite close to the Indian villages in the Quaboag area.",
-					"wartime": "Brookfield was attacked by Nipmuc Indians August 2-4, 1675.",
-					"postwar": ".."
+					"prewar": "Settler Colonist presence at Brookfield was established as the Quaboag Plantation, and was quite close to the Indian villages in the Quaboag area. The Town of Brookfield was originally settled through a land grant obtained in May of 1660, and another deed in 1665 confirmed the official purchase of the land from the local Nipmucs in the Quaboag area. However, it's unclear whether the settlers began clearing/construction for their own structures until after the land grant was obtained. The land purchased was a considerable expanse spanning the land between two ponds where the Quaboag Indians had established villages.",
+					"wartime": "Brookfield was attacked by Nipmucs beginning on August 2, 1675. The colonists had been working to try to get assurances of loyalty from the Nipmucs after hostilities had already started against the Wampanoags. However, by the time these negotiations started, the attack on Mendon had already begun. The initial siege began when the colonists attempted to pursue Nipmuc sachem Muttawmp when negotiations began to break down. Praying Indians from Natick served as guides for the colonists and assisted in getting them out of the initial attack near the Nipmuc base camp. The soldiers retreated to the Ayers Garrison house, where they were under attack for the next couple of days. A good portion of the rest of Bookfield was burned. ",
+					"postwar": ""
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Polygon",
+					"coordinates": [
+						[
+							[-71.445616, 42.50869],
+							[-71.516120, 42.487081],
+							[-71.541415, 42.550438],
+							[-71.481329, 42.561561]
+
+						]
+					]
+				},
+				"properties":{
+					"name": "Littleton",
+					"prewar": 'The town of Littleton began to be re-settled shortly after the war by colonists, and was incorporated in November, 1715.',
+					"wartime": "",
+					"postwar": ""
 				}
 			}
 		]	

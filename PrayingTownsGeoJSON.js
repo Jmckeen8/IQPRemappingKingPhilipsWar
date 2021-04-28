@@ -12,10 +12,10 @@ var prayingTowns =
 					]
 				},
 				"properties": {
-					"name": "The John Eliot Oak, Natick",
-					"prewar": "John Eliot establishes a location to preach to and answer questions from the Praying Indians",
-					"wartime": "",
-					"postwar": "",
+					"name": "Natick",
+					"prewar": "Natick was the first of John Eliot's praying towns, originally settled in 1651. This pin is at the location of the 'John Eliot Oak', the location where Eliot first began preaching. This would later become the site of the first meeting house",
+					"wartime": "When all Indians were directed to be confined to five certain plantations on August 31, 1675, Natick was one of the designated locations. In October, these Praying Indians would again be forced to relocate, this time out to islands in the Boston Harbor, the most notable of which being Deer Island",
+					"postwar": "After the war, Natick did continue to exist in some capacity, but the Praying Indian community lost a lot of members to the harsh winter of 1675 in internment. Lots of the land was slowly sold off to settler colonists. About a century after the war Natick would be officially incorporated as a Massachusetts town. ",
 					"type": "old"
 				}
 			},
@@ -148,7 +148,7 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Wamesit Village",
-					"prewar": "Described as along the river banks where the Concord River meets the Merrimack ",
+					"prewar": 'Wamesit was one of the "old" praying towns established by John Eliot, although prior to this the area was already inhabited and were considered part of the Penacooks. As settler colonists began to establish towns nearby (in Chelmsford and Billerica), Eliot petitioned the Massachusetts government to grant a piece of land to remain in the hands of the Wamesit Indians, and used the opportunity to convert the area to a praying town. The village was described as along the river banks where the Concord River meets the Merrimack, and the name Wamesit itself means "place where the rivers converge"',
 					"wartime": "",
 					"postwar": "",
 					"type": "old"
@@ -199,9 +199,9 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Punkapog",
-					"prewar": "Location of historical marker placed on the northern line of the area",
+					"prewar": "Punkapog was a praying town established in 1657. This point is the location of historical marker placed on the northern line of the area.",
 					"wartime": "",
-					"postwar": "",
+					"postwar": "After the war, Punkapog was one of the few praying towns that was reinhabited. To this day, the Punkapog tribe still exists and has a fully functional tribal government. ",
 					"type": "old"
 				}
 			},
@@ -216,7 +216,7 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Makunkokoag",
-					"prewar": "Marker placed on area known as Magunco Hill",
+					"prewar": 'Makunkokoag was one of the "old" praying towns established with the help of John Eliot. This marker placed on area known as Magunco Hill.',
 					"wartime": "",
 					"postwar": "",
 					"type": "old"
@@ -436,7 +436,33 @@ var prayingTowns =
 					"type": "internment"
 				}
 			},
-			
+			// {
+			// 	"type": "Feature",
+			// 	"geometry": {
+			// 		"type": "LineString",
+			// 		"coordinates": [
+			// 			[
+			// 				[-59.60755, 13.10238],
+			// 				[-59.60837, 13.10283],
+			// 				[-59.6091, 13.10288],
+			// 				[-59.60957, 13.10279],
+			// 				[-59.61088, 13.1021],
+			// 				[-59.61104, 13.10194],
+			// 				[-59.61104, 13.09969],						
+			// 				[-59.61294, 13.09942],
+			// 				[-59.61432, 13.09877],
+			// 				[-59.61459, 13.09854]
+			// 			]
+			// 		]
+			// 	},
+			// 	"properties":{
+			// 		"name": "Roebuck Street, Bridgetown, Barbados",
+			// 		"prewar": "",
+			// 		"wartime": "",
+			// 		"postwar": "<a href='detail/PostWarCaptivity.html'>Roebuck Street</a> was home to many parlimentary meetings and conferences in Barbados, as there was no official state house. One of the actions of this parliament was a 1675 Act to try to prohibit the practice of Indian slaves, including those from the northeast who were taken captive as part of King Philip's War, from being brought to the island.",
+			// 		"type": "internment"
+			// 	}
+			// },
 			{
 				"type": "Feature",
 				"geometry": {
@@ -501,7 +527,7 @@ var prayingTowns =
 				},
 				"properties":{
 					"name": "Nashoba",
-					"prewar": "Overall boundary of praying town of Nashoba",
+					"prewar": 'Nashoba was one of the "old" praying towns established with the help of John Eliot. Upon the declaration that all Indians must move to certain locations on August 31, 1675, Nashoba was not one of the included locations, and the residents were forced to relocate. They had to relocate again in October, as they were forced into internment on Boston Harbor islands, including Deer Island. ',
 					"wartime": "",
 					"postwar": "",
 					"type": "old"
