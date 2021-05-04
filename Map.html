@@ -45,6 +45,7 @@
 		}
 		
 	</style>
+	<!--General CSS for whole page: body and headers-->
 	<style>
 		body {
 			font-family: 'Trebuchet MS', sans-serif;
@@ -71,8 +72,11 @@
 
 <body>
 <p><a href="index.html">Back to home page</a></p>
+
 <!-- HTML div for primary map window, ADJUST MAP SIZE HERE -->
 <div id="mapid" style="width: 1200px; height: 700px;"></div>
+
+<!-- HTML div for "time control" buttons underneath the map. These buttons call dedicated JS functions -->
 <div id="buttons" style="width:1200px; text-align:center">
 	Select a time period to view locations: <br>
 	<button type="button" style="display:inline-block; font-size:16px;" onclick="prewar()">Pre-War (before August 1675)</button>
@@ -82,6 +86,7 @@
 	<button type="button" style="display:inline-block; font-size:16px;" onclick="postwar()">Post-War (after April 1678)</button>
 </div>
 
+<!-- Required Creative Commons license information for a couple of icons used on the map -->
 <p style="font-size:12">
 	Praying Indian town icon, composite of "<a href="https://commons.wikimedia.org/wiki/File:Eliot_Church_and_John_Eliot_plaque_in_South_Natick_MA_USA_Site_of_First_Indian_meetinghouse_built_by_John_Eliot_and_Natick_Indians_His_disciple_Daniel_Takawambait_succeeded_to_the_pastoral_office_in_1698.jpg">Eliot Church and John Eliot plaque in South Natick MA USA Site of First Indian meetinghouse built by John Eliot and Natick Indians His disciple Daniel Takawambait succeeded to the pastoral office in 1698</a>" and "<a href="https://commons.wikimedia.org/wiki/File:Eliot_Church_Unitarian_Universalist_in_South_Natick_MA_USA.jpg">Eliot Church Unitarian Universalist in South Natick MA USA</a>," photographs taken by Swampyank on Oct 25, 2020, photographs adapted by Cameron Fiddes on April 12, 2021 under the terms of <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC-BY-SA-4.0</a>. Swampyank is not affilitated with this project or any of its members.
 </p>
@@ -89,11 +94,14 @@
 	Indian village icon, "<a href="https://flic.kr/p/piXqkf">this communal wetu would shelter 3 families</a>," photograph taken by Nicolás Boullosa on August 16, 2014, photograph adapted by Cameron Fiddes on April 4, 2021 under the terms of <a href="https://creativecommons.org/licenses/by/2.0/">CC-BY-2.0</a>. Nicolás Boullosa is not affiliated with this project or any of its members.
 </p>
 
+<!-- BEGIN JS SCRIPTS HERE -->
+
 <!-- Import GeoJSON here. NOTE: These files have .js scripts that declare each JSON object as a variable ready to use -->
 <script src="ColonistTownsGeoJSON.js" type="text/javascript"></script>
 <script src="PrayingTownsGeoJSON.js" type="text/javascript"></script>
 <script src="IndianVillagesGeoJSON.js" type="text/javascript"></script>
 
+<!-- General script for establishing full Leaflet Map -->
 <script>
 
 	//establish variables for different tile base layers
@@ -121,7 +129,9 @@
 	});
 	
 	//ESTABLISHING MARKER COLORS USING leaflet-color-markers library
+	//Additional custom markers used, located in /icons folder
 
+	//set dedicated Height for the Wetu icons, as this icon has dimensions that are much more "square" compared to the others
 	var wetuIconHeight = 25;
 	
 	var greenIcon = new L.Icon({
@@ -313,22 +323,22 @@
 		shadowSize: [41, 41]
 	});
 	
-	//This function is called on every GeoJSON feature imported from the ColonistTownsGeoJSON file
+	//These functions are called on every GeoJSON feature imported from the ColonistTownsGeoJSON file
 	function onEachPreColonistTown(feature, layer) {
 		var popupContent = "";
 
-		if (feature.properties && feature.properties.name && feature.properties.prewar) {
+		if (feature.properties && feature.properties.name && feature.properties.prewar) {  //filter here for features that have a "prewar" properties value
 			popupContent += ("<b>" + feature.properties.name + "</b>" + "<br><br>");
 			popupContent += feature.properties.prewar;
 		}
 
 		layer.bindPopup(popupContent);
 		
-		if (layer instanceof L.Marker){
+		if (layer instanceof L.Marker){  //set red colonist town marker
 			layer.setIcon(redColTown);
 		}
 		
-		if (layer instanceof L.Path && feature.properties.prewar){
+		if (layer instanceof L.Path && feature.properties.prewar){  //set red polygon
 			layer.setStyle({fillColor:'red', color:'red'});
 		}
 	}
@@ -336,7 +346,7 @@
 	function onEachWarColonistTown(feature, layer) {
 		var popupContent = "";
 
-		if (feature.properties && feature.properties.name && feature.properties.wartime) {
+		if (feature.properties && feature.properties.name && feature.properties.wartime) {  //filter for "wartime"
 			popupContent += ("<b>" + feature.properties.name + "</b>" + "<br><br>");
 			popupContent += feature.properties.wartime;
 		}
@@ -344,71 +354,67 @@
 		layer.bindPopup(popupContent);
 		
 		if (layer instanceof L.Marker){
-			layer.setIcon(redBattle);
+			layer.setIcon(redBattle);   //red battle icon
 		}
 		
 		if (layer instanceof L.Path){
-			layer.setStyle({fillColor:'red', color:'red'});
+			layer.setStyle({fillColor:'red', color:'red'});  //red outline for polygons
 		}
 	}
 	
 	function onEachPostColonistTown(feature, layer) {
 		var popupContent = "";
 
-		if (feature.properties && feature.properties.name && feature.properties.postwar) {
+		if (feature.properties && feature.properties.name && feature.properties.postwar) {  //filter for "postwar"
 			popupContent += ("<b>" + feature.properties.name + "</b>" + "<br><br>");
 			popupContent += feature.properties.postwar;
 		}
 
 		layer.bindPopup(popupContent);
 		
-		if (layer instanceof L.Marker){
+		if (layer instanceof L.Marker){   //red colonist town icon
 			layer.setIcon(redColTown);
 		}
 		
 		if (layer instanceof L.Path){
-			layer.setStyle({fillColor:'red', color:'red'});
+			layer.setStyle({fillColor:'red', color:'red'});  //red polygons
 		}
 	}
 	
 	
 	
-	//This function is called on every GeoJSON feature imported from the PrayingTownsGeoJSON file
+	//These functions are called on every GeoJSON feature imported from the PrayingTownsGeoJSON file
 	function onEachPrePrayingTown(feature, layer) {
 		var popupContent = "";
 
-		if (feature.properties && feature.properties.name && feature.properties.prewar) {
+		if (feature.properties && feature.properties.name && feature.properties.prewar) {  //filter for "prewar"
 			popupContent += ("<b>" + feature.properties.name + "</b>" + "<br><br>");
 			popupContent += feature.properties.prewar;
 		}
 
 		layer.bindPopup(popupContent);
 		
-		//if (layer instanceof L.Marker && feature.properties.type=="old"){
-		//	layer.setIcon();
-		//}
-		
-		if (layer instanceof L.Marker && feature.properties.type=="old"){
+		if (layer instanceof L.Marker && feature.properties.type=="old"){  //icon for old praying towns
 			layer.setIcon(blueChurch);
 		}
 		
-		if (layer instanceof L.Marker && feature.properties.type=="old" && feature.properties.planting=="true"){
+		if (layer instanceof L.Marker && feature.properties.type=="old" && feature.properties.planting=="true"){  //icon for old praying towns' planting areas
 			layer.setIcon(blueCorn);
 		}
 		
-		if (layer instanceof L.Marker && feature.properties.type=="new"){
+		if (layer instanceof L.Marker && feature.properties.type=="new"){  //new praying towns
 			layer.setIcon(greenChurch);
 		}
 		
-		if (layer instanceof L.Path && feature.properties.type=="new"){
+		if (layer instanceof L.Path && feature.properties.type=="new"){  //new praying town polygons
 			layer.setStyle({fillColor:'green', color:'green'});
 		}
 		
-		if (layer instanceof L.Marker && feature.properties.type=="internment"){
+		if (layer instanceof L.Marker && feature.properties.type=="internment"){  //internment locations
 			layer.setIcon(violetIcon);
 		}
 		
-		if (layer instanceof L.Path && feature.properties.type=="internment"){
+		if (layer instanceof L.Path && feature.properties.type=="internment"){  //interment location polygons
 			layer.setStyle({fillColor:'violet', color:'violet'});
 		}
 	}
@@ -416,30 +422,30 @@
 	function onEachWarPrayingTown(feature, layer) {
 		var popupContent = "";
 
-		if (feature.properties && feature.properties.name && feature.properties.wartime) {
+		if (feature.properties && feature.properties.name && feature.properties.wartime) {  //filter for "wartime"
 			popupContent += ("<b>" + feature.properties.name + "</b>" + "<br><br>");
 			popupContent += feature.properties.wartime;
 		}
 
 		layer.bindPopup(popupContent);
 		
-		if (layer instanceof L.Marker && feature.properties.type=="old"){
+		if (layer instanceof L.Marker && feature.properties.type=="old"){   //old praying town icon
 			layer.setIcon(blueChurch);
 		}
 
-		if (layer instanceof L.Marker && feature.properties.type=="new"){
+		if (layer instanceof L.Marker && feature.properties.type=="new"){   //new praying town icon
 			layer.setIcon(greenChurch);
 		}
 		
-		if (layer instanceof L.Path && feature.properties.type=="new"){
+		if (layer instanceof L.Path && feature.properties.type=="new"){   //new praying town polygon
 			layer.setStyle({fillColor:'green', color:'green'});
 		}
 		
-		if (layer instanceof L.Marker && feature.properties.type=="internment"){
+		if (layer instanceof L.Marker && feature.properties.type=="internment"){  //wartime internment icon
 			layer.setIcon(violetShackles);
 		}
 		
-		if (layer instanceof L.Path && feature.properties.type=="internment"){
+		if (layer instanceof L.Path && feature.properties.type=="internment"){  //wartime internment polygon
 			layer.setStyle({fillColor:'violet', color:'violet'});
 		}
 	}
@@ -447,47 +453,48 @@
 	function onEachPostPrayingTown(feature, layer) {
 		var popupContent = "";
 
-		if (feature.properties && feature.properties.name && feature.properties.postwar) {
+		if (feature.properties && feature.properties.name && feature.properties.postwar) { //filter for "postwar"
 			popupContent += ("<b>" + feature.properties.name + "</b>" + "<br><br>");
 			popupContent += feature.properties.postwar;
 		}
 
 		layer.bindPopup(popupContent);
 		
-		if (layer instanceof L.Marker && feature.properties.type=="old"){
+		if (layer instanceof L.Marker && feature.properties.type=="old"){  //postwar old praying town icon
 			layer.setIcon(blueChurch);
 		}
 
-		if (layer instanceof L.Marker && feature.properties.type=="new"){
+		if (layer instanceof L.Marker && feature.properties.type=="new"){  //new praying town icon
 			layer.setIcon(greenChurch);
 		}
 		
-		if (layer instanceof L.Path && feature.properties.type=="new"){
+		if (layer instanceof L.Path && feature.properties.type=="new"){  //new praying town polygon
 			layer.setStyle({fillColor:'green', color:'green'});
 		}
 		
-		if (layer instanceof L.Marker && feature.properties.type=="internment"){
+		if (layer instanceof L.Marker && feature.properties.type=="internment"){  //postwar interment icon
 			layer.setIcon(violetShackles);
 		}
 		
-		if (layer instanceof L.Path && feature.properties.type=="internment"){
+		if (layer instanceof L.Path && feature.properties.type=="internment"){  //postwar internment polygon
 			layer.setStyle({fillColor:'violet', color:'violet'});
 		}
 	}
 	
 	
 	
-	//This function is called on every GeoJSON feature imported from the IndianVillagesGeoJSON file
+	//these functions are called on every GeoJSON feature imported from the IndianVillagesGeoJSON file
 	function onEachPreIndianVillage(feature, layer) {
 		var popupContent = "";
 
-		if (feature.properties && feature.properties.name && feature.properties.prewar) {
+		if (feature.properties && feature.properties.name && feature.properties.prewar) {  //filter for prewar
 			popupContent += ("<b>" + feature.properties.name + "</b>" + "<br><br>");
 			popupContent += feature.properties.prewar;
 		}
 
 		layer.bindPopup(popupContent);
 		
+		//icon and polygon color for each tribe
 		if (layer instanceof L.Marker && feature.properties.type=="Nipmuc"){
 			layer.setIcon(goldWetu);
 		}
@@ -508,7 +515,7 @@
 			layer.setIcon(orangeWetu);
 		}
 		
-		if (layer instanceof L.Marker && feature.properties.type=="Wampanoag" && feature.properties.planting=="true"){
+		if (layer instanceof L.Marker && feature.properties.type=="Wampanoag" && feature.properties.planting=="true"){  //specifically check for Wampanoag planting area
 			layer.setIcon(orangeCorn);
 		}
 		
@@ -520,13 +527,14 @@
 	function onEachWarIndianVillage(feature, layer) {
 		var popupContent = "";
 
-		if (feature.properties && feature.properties.name && feature.properties.wartime) {
+		if (feature.properties && feature.properties.name && feature.properties.wartime) {  //filter for "wartime"
 			popupContent += ("<b>" + feature.properties.name + "</b>" + "<br><br>");
 			popupContent += feature.properties.wartime;
 		}
 
 		layer.bindPopup(popupContent);
 		
+		//icon and polygon color for each tribe
 		if (layer instanceof L.Marker && feature.properties.type=="Nipmuc"){
 			layer.setIcon(goldWetu);
 		}
@@ -539,7 +547,7 @@
 			layer.setIcon(yellowWetu);
 		}
 		
-		if (layer instanceof L.Marker && feature.properties.type=="Narragansett" && feature.properties.battle=="true"){
+		if (layer instanceof L.Marker && feature.properties.type=="Narragansett" && feature.properties.battle=="true"){  //check for Narragansett battle location
 			layer.setIcon(yellowViolence);
 		}
 		
@@ -551,7 +559,7 @@
 			layer.setIcon(orangeIcon);
 		}
 		
-		if (layer instanceof L.Marker && feature.properties.type=="Wampanoag" && feature.properties.battle=="true"){
+		if (layer instanceof L.Marker && feature.properties.type=="Wampanoag" && feature.properties.battle=="true"){  //check for Wampanoag battle location
 			layer.setIcon(orangeViolence);
 		}
 		
@@ -563,13 +571,14 @@
 	function onEachPostIndianVillage(feature, layer) {
 		var popupContent = "";
 
-		if (feature.properties && feature.properties.name && feature.properties.postwar) {
+		if (feature.properties && feature.properties.name && feature.properties.postwar) {  //check for "postwar"
 			popupContent += ("<b>" + feature.properties.name + "</b>" + "<br><br>");
 			popupContent += feature.properties.postwar;
 		}
 
 		layer.bindPopup(popupContent);
 		
+		//icon color and polygon color for each tribe
 		if (layer instanceof L.Marker && feature.properties.type=="Nipmuc"){
 			layer.setIcon(goldIcon);
 		}
@@ -595,7 +604,9 @@
 		}
 	}
 	
-	//STRUCTURE:   LAYERNAME = L.GeoJSON(geoJSONVariableNameInJsFile, {onEachFeature: onEachFeatureFunctionName});
+	//STRUCTURE:   var LAYERNAME = L.GeoJSON(geoJSONVariableNameInJsFile, {onEachFeature: onEachFeatureFunctionName, 
+	//                             filter: function(feature, layer) {return PROPERTY TO CHECK NONEMPTY != "";}});
+	//                   essentially, this filter checks to see if the property prewar, wartime, or postwar strings are not empty, and if so allows the feature through the filter
 	
 	//Importing Colonist Towns from GeoJSON and run onEachFeatureFunction for each feature
 	
@@ -746,13 +757,16 @@
 	
 	
 	//create map with center set, zoom set, and layers list
+	//under "layers", this is where we define which layers are shown on the map on first load. These may be changed by the user with the layer controls
+	//"layers" includes both the baselayer and any data layers
 	var mymap = L.map('mapid', {
 		center: [42.445, -71.68],
 		zoom: 8,
 		layers: [MAP, PRECOLTOWNS, PREOLDPRAYTOWNS, PRENEWPRAYTOWNS, PRENIPMUCVILLAGES, PREWAMPANOAGVILLAGES, PRENARRAGANSETTVILLAGES]
 	});
 	
-	//adding control for the layers
+	//ADDING LAYER CONTROLS:
+
 	//baseLayers group (mutually exclusive, one at a time):
 	var baseMaps = {
 		"Topographical": MAP,
@@ -760,7 +774,7 @@
 		"Sat. Modern Labels": OLD
 	};
 	
-	//layer groups for easy adding for each time period
+	//Layer groups defined here for each time period, so the time period "switcher" functions can easily enable/disable them
 	var preLayerGroup = L.layerGroup([PRECOLTOWNS, PREOLDPRAYTOWNS, PRENEWPRAYTOWNS, PRENIPMUCVILLAGES, PREWAMPANOAGVILLAGES, PRENARRAGANSETTVILLAGES]);
 	
 	var warLayerGroup = L.layerGroup([WARCOLTOWNS, WAROLDPRAYTOWNS, WARNEWPRAYTOWNS, WARINTERNMENT, WARNIPMUCVILLAGES, WARWAMPANOAGVILLAGES, WARNARRAGANSETTVILLAGES]);
@@ -768,7 +782,9 @@
 	var postLayerGroup = L.layerGroup([POSTCOLTOWNS, POSTOLDPRAYTOWNS, POSTNEWPRAYTOWNS, POSTINTERNMENT, POSTNIPMUCVILLAGES, POSTWAMPANOAGVILLAGES, POSTNARRAGANSETTVILLAGES]);
 	
 	
-	//overlays (may be stacked)
+	//information (geographic points/areas) overlays to be placed on top of the baselayers
+	//three separate groups defined here so the options can change depending on the time period
+	//note: these only set the layers switching controls visible to the user, not the actual layers that switch in the time periods
 	var preOverlayMaps = {
 		"Colonist Towns": PRECOLTOWNS,
 		"Praying Towns (Old)": PREOLDPRAYTOWNS,
@@ -806,6 +822,7 @@
 	
 	var legend2 = L.control({position: "bottomright"});  //legend for symbols/icons
 	
+	//Defining text and colors to show for the Color legend
 	legend.onAdd = function(map) {
 		var div = L.DomUtil.create("div", "legend");
 		div.innerHTML += "<h4>Color Legend</h4>";
@@ -819,7 +836,10 @@
 		
 		return div;
 	};
+	//add this color legend to the map
+	legend.addTo(mymap);
 	
+	//Defining text and icons to show for the Symbol legend
 	legend2.onAdd = function(map) {
 		var div = L.DomUtil.create("div", "legend");
 		div.innerHTML += "<h4>Symbol Legend</h4>";
@@ -833,50 +853,50 @@
 		
 		return div;
 	};
-	
-	
-	
-	legend.addTo(mymap);
+	//add this symbol legend to the map
 	legend2.addTo(mymap);
 	
+	//These three functions get called by the "time switcher" buttons underneath the map
+
+	//switch to "prewar" mode
 	function prewar(){
-		mymap.eachLayer(function (layer){
+		mymap.eachLayer(function (layer){  //remove all current layers from the map
 			mymap.removeLayer(layer);
 		});
 		
-		mymap.addLayer(MAP);
-		mymap.addLayer(preLayerGroup);
+		mymap.addLayer(MAP);   //add topographic baselayer
+		mymap.addLayer(preLayerGroup);  //add the layer group with appropriate prewar layers
 		
-		mymap.removeControl(layersControl);
+		mymap.removeControl(layersControl);  //remove current layer control
 		
-		layersControl = L.control.layers(baseMaps, preOverlayMaps).addTo(mymap);
+		layersControl = L.control.layers(baseMaps, preOverlayMaps).addTo(mymap);  //add new appropriate layer control
 	}
 	
 	function wartime(){
-		mymap.eachLayer(function (layer){
+		mymap.eachLayer(function (layer){  //remove all current layers from the map
 			mymap.removeLayer(layer);
 		});
 		
-		mymap.addLayer(MAP);
-		mymap.addLayer(warLayerGroup);
+		mymap.addLayer(MAP);   //add topographic baselayer
+		mymap.addLayer(warLayerGroup);  //add the layer group with appropriate prewar layers
 		
-		mymap.removeControl(layersControl);
+		mymap.removeControl(layersControl);  //remove current layer control
 		
-		layersControl = L.control.layers(baseMaps, warOverlayMaps).addTo(mymap);
+		layersControl = L.control.layers(baseMaps, warOverlayMaps).addTo(mymap);  //add new appropriate layer control
 	
 	}
 	
 	function postwar(){
-		mymap.eachLayer(function (layer){
+		mymap.eachLayer(function (layer){  //remove all current layers from the map
 			mymap.removeLayer(layer);
 		});
 		
-		mymap.addLayer(MAP);
-		mymap.addLayer(postLayerGroup);
+		mymap.addLayer(MAP);   //add topographic baselayer
+		mymap.addLayer(postLayerGroup);  //add the layer group with appropriate prewar layers
 		
-		mymap.removeControl(layersControl);
+		mymap.removeControl(layersControl);  //remove current layer control
 		
-		layersControl = L.control.layers(baseMaps, postOverlayMaps).addTo(mymap);
+		layersControl = L.control.layers(baseMaps, postOverlayMaps).addTo(mymap);  //add new appropriate layer control
 	
 	}
 
